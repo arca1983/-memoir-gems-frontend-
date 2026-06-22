@@ -399,3 +399,45 @@
 }
 
 
+
+/* ============================================================
+   Mobile-length pass (sticky CTA, compact "how it works",
+   condensed B2B teaser) — added to shorten the phone experience
+   without touching desktop.
+   ============================================================ */
+
+/* sticky bottom "Create Your Gems" bar — phones only, appears after the hero */
+.mg-home .mobile-sticky-cta{display:none}
+@media (max-width:600px){
+  .mg-home .mobile-sticky-cta{
+    display:block;position:fixed;left:14px;right:14px;
+    bottom:calc(14px + env(safe-area-inset-bottom));
+    z-index:40;opacity:0;transform:translateY(14px);
+    pointer-events:none;transition:opacity .25s,transform .25s;
+  }
+  .mg-home .mobile-sticky-cta.show{opacity:1;transform:translateY(0);pointer-events:auto}
+  .mg-home .mobile-sticky-cta .btn{box-shadow:0 14px 30px -10px rgba(0,0,0,.45)}
+}
+
+/* "How it works" — one compact scrollable row on phones instead of 3 stacked rows */
+@media (max-width:600px){
+  .mg-home .how .steps{
+    display:flex;flex-wrap:nowrap;overflow-x:auto;gap:14px;
+    scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;padding-bottom:4px;margin:0 calc(-1 * var(--pad));
+    padding-left:var(--pad);padding-right:var(--pad);
+  }
+  .mg-home .how .steps::-webkit-scrollbar{display:none}
+  .mg-home .how .step{flex:0 0 138px;scroll-snap-align:start}
+  .mg-home .how .step::after{display:none!important}
+}
+
+/* B2B — full chip grid only above 600px; phones get the one-line teaser instead */
+.mg-home .b2b-mobile-teaser{display:none}
+@media (max-width:600px){
+  .mg-home .b2b-grid{display:none}
+  .mg-home .b2b-mobile-teaser{
+    display:block;text-align:center;color:color-mix(in srgb,var(--on-dark) 82%,transparent);
+    font-size:14.5px;line-height:1.6;max-width:46ch;margin:0 auto 28px;
+  }
+}
