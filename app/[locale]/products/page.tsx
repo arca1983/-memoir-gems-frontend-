@@ -1,92 +1,30 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
 
-const PRODUCTS = [
-  {
-    id: "shell-2x2",
-    name: "Classic Shell — 2×2\"",
-    slug: "shell-2x2",
-    size: "2×2",
-    desc: "Best-selling square. 9 photos per set. Clusters & desk sets.",
-    price: 48,
-    qty: 9,
-    img: "https://images.unsplash.com/photo-1529636562405-8bb4b3e9b01f?w=600&q=80",
-    tag: "Best Seller",
-  },
-  {
-    id: "shell-2.5x2.5",
-    name: "Standard Shell — 2.5×2.5\"",
-    slug: "shell-2-5x2-5",
-    size: "2.5×2.5",
-    desc: "Panoramic & groups. 9 photos per set. Links to a photo album.",
-    price: 58,
-    qty: 9,
-    img: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80",
-    tag: "Popular",
-  },
-  {
-    id: "shell-2x3",
-    name: "Portrait Shell — 2×3\"",
-    slug: "shell-2x3",
-    size: "2×3",
-    desc: "Weddings & memorials. 6 photos per set. Portrait orientation.",
-    price: 52,
-    qty: 6,
-    img: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=600&q=80",
-    tag: "New",
-  },
-  {
-    id: "shell-2.5x3.5",
-    name: "Story Shell — 2.5×3.5\"",
-    slug: "shell-2-5x3-5",
-    size: "2.5×3.5",
-    desc: "Centerpiece size. 6 photos per set. Perfect for memorials.",
-    price: 64,
-    qty: 6,
-    img: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&q=80",
-    tag: "Gift Favorite",
-  },
-  {
-    id: "shell-3x3",
-    name: "Grand Shell — 3×3\"",
-    slug: "shell-3x3",
-    size: "3×3",
-    desc: "Statement piece. 4 photos per set. Maximum impact.",
-    price: 74,
-    qty: 4,
-    img: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=600&q=80",
-    tag: "Premium",
-  },
-  {
-    id: "wedding-pack",
-    name: "Wedding Story Pack",
-    slug: "wedding-pack",
-    size: "2.5×2.5",
-    desc: "Nine 2.5×2.5 Shells. Link each one to a different video moment from the day.",
-    price: 89,
-    qty: 9,
-    img: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=80",
-    tag: "Collection",
-  },
-  {
-    id: "puzzle-shells",
-    name: "Puzzle Shell Set",
-    slug: "puzzle-shells",
-    size: "2×2",
-    desc: "One photo split across 9 interlocking Shell magnets. Assemble on your fridge for the full picture.",
-    price: 79,
-    qty: 9,
-    img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    tag: "Exclusive",
-  },
-];
+const PRODUCT_META: Record<string, { slug: string; size: string; price: number; qty: number; img: string }> = {
+  "shell-2x2": { slug: "shell-2x2", size: "2×2", price: 48, qty: 9, img: "https://images.unsplash.com/photo-1529636562405-8bb4b3e9b01f?w=600&q=80" },
+  "shell-2.5x2.5": { slug: "shell-2-5x2-5", size: "2.5×2.5", price: 58, qty: 9, img: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80" },
+  "shell-2x3": { slug: "shell-2x3", size: "2×3", price: 52, qty: 6, img: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=600&q=80" },
+  "shell-2.5x3.5": { slug: "shell-2-5x3-5", size: "2.5×3.5", price: 64, qty: 6, img: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&q=80" },
+  "shell-3x3": { slug: "shell-3x3", size: "3×3", price: 74, qty: 4, img: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=600&q=80" },
+  "wedding-pack": { slug: "wedding-pack", size: "2.5×2.5", price: 89, qty: 9, img: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=80" },
+  "puzzle-shells": { slug: "puzzle-shells", size: "2×2", price: 79, qty: 9, img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" },
+};
+
+type Item = { id: string; name: string; desc: string; tag: string };
 
 export default function ProductsPage() {
+  const locale = useLocale();
+  const t = useTranslations("Products");
+  const items = t.raw("items") as Item[];
+
   return (
     <div style={{ background: "var(--ivory)", minHeight: "100vh" }}>
       <div style={{ background: "var(--navy)", padding: "4rem 2rem", textAlign: "center" }}>
         <div className="section-label" style={{ color: "var(--gold-light)", marginBottom: "0.8rem" }}>
-          ◆ Our Collection
+          ◆ {t("eyebrow")}
         </div>
         <h1
           style={{
@@ -97,10 +35,10 @@ export default function ProductsPage() {
             marginBottom: "0.8rem",
           }}
         >
-          Memoir Gems Shell Products
+          {t("title")}
         </h1>
         <p style={{ fontSize: "0.9rem", color: "var(--taupe)", maxWidth: 500, margin: "0 auto" }}>
-          Five Shell sizes plus exclusive puzzle sets. Ships gift-ready in 7 days.
+          {t("subtitle")}
         </p>
       </div>
 
@@ -115,119 +53,123 @@ export default function ProductsPage() {
         }}
         className="products-grid"
       >
-        {PRODUCTS.map((p) => (
-          <Link key={p.id} href={`/en/products/${p.slug}`}>
-            <div
-              style={{
-                background: "white",
-                border: "1px solid var(--taupe)",
-                overflow: "hidden",
-                cursor: "pointer",
-                transition: "border-color 0.2s, transform 0.2s, box-shadow 0.2s",
-              }}
-              onMouseEnter={(e) => {
-                const el = e.currentTarget as HTMLElement;
-                el.style.borderColor = "var(--navy)";
-                el.style.transform = "translateY(-4px)";
-                el.style.boxShadow = "0 12px 40px rgba(13,27,42,0.1)";
-              }}
-              onMouseLeave={(e) => {
-                const el = e.currentTarget as HTMLElement;
-                el.style.borderColor = "var(--taupe)";
-                el.style.transform = "translateY(0)";
-                el.style.boxShadow = "none";
-              }}
-            >
-              <div style={{ position: "relative", paddingTop: "75%", overflow: "hidden" }}>
-                <Image
-                  src={p.img}
-                  alt={p.name}
-                  fill
-                  style={{ objectFit: "cover", transition: "transform 0.5s" }}
-                  sizes="400px"
-                />
-                <div
-                  style={{
-                    position: "absolute",
-                    top: "1rem",
-                    left: "1rem",
-                    background: p.tag === "Exclusive" ? "var(--gold)" : "var(--navy)",
-                    color: p.tag === "Exclusive" ? "white" : "var(--gold-light)",
-                    fontSize: "0.6rem",
-                    fontWeight: 600,
-                    letterSpacing: "0.14em",
-                    textTransform: "uppercase",
-                    padding: "0.3rem 0.7rem",
-                  }}
-                >
-                  {p.tag}
-                </div>
-              </div>
-
-              <div style={{ padding: "1.5rem" }}>
-                <div
-                  style={{
-                    fontFamily: "var(--font-body)",
-                    fontSize: "0.62rem",
-                    letterSpacing: "0.18em",
-                    textTransform: "uppercase",
-                    color: "var(--gold)",
-                    marginBottom: "0.4rem",
-                  }}
-                >
-                  {p.size}" · {p.qty} pieces
-                </div>
-                <h3
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    fontSize: "1.25rem",
-                    fontWeight: 500,
-                    color: "var(--navy)",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  {p.name}
-                </h3>
-                <p
-                  style={{
-                    fontSize: "0.82rem",
-                    color: "var(--text-muted)",
-                    lineHeight: 1.6,
-                    marginBottom: "1.2rem",
-                  }}
-                >
-                  {p.desc}
-                </p>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span
+        {items.map((p) => {
+          const meta = PRODUCT_META[p.id];
+          if (!meta) return null;
+          return (
+            <Link key={p.id} href={`/${locale}/products/${meta.slug}`}>
+              <div
+                style={{
+                  background: "white",
+                  border: "1px solid var(--taupe)",
+                  overflow: "hidden",
+                  cursor: "pointer",
+                  transition: "border-color 0.2s, transform 0.2s, box-shadow 0.2s",
+                }}
+                onMouseEnter={(e) => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.borderColor = "var(--navy)";
+                  el.style.transform = "translateY(-4px)";
+                  el.style.boxShadow = "0 12px 40px rgba(13,27,42,0.1)";
+                }}
+                onMouseLeave={(e) => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.borderColor = "var(--taupe)";
+                  el.style.transform = "translateY(0)";
+                  el.style.boxShadow = "none";
+                }}
+              >
+                <div style={{ position: "relative", paddingTop: "75%", overflow: "hidden" }}>
+                  <Image
+                    src={meta.img}
+                    alt={p.name}
+                    fill
+                    style={{ objectFit: "cover", transition: "transform 0.5s" }}
+                    sizes="400px"
+                  />
+                  <div
                     style={{
-                      fontFamily: "var(--font-display)",
-                      fontSize: "1.3rem",
+                      position: "absolute",
+                      top: "1rem",
+                      left: "1rem",
+                      background: p.id === "puzzle-shells" ? "var(--gold)" : "var(--navy)",
+                      color: p.id === "puzzle-shells" ? "white" : "var(--gold-light)",
+                      fontSize: "0.6rem",
                       fontWeight: 600,
-                      color: "var(--navy)",
+                      letterSpacing: "0.14em",
+                      textTransform: "uppercase",
+                      padding: "0.3rem 0.7rem",
                     }}
                   >
-                    ${p.price}.00
-                  </span>
-                  <span
+                    {p.tag}
+                  </div>
+                </div>
+
+                <div style={{ padding: "1.5rem" }}>
+                  <div
                     style={{
                       fontFamily: "var(--font-body)",
-                      fontSize: "0.65rem",
-                      fontWeight: 500,
-                      letterSpacing: "0.12em",
+                      fontSize: "0.62rem",
+                      letterSpacing: "0.18em",
                       textTransform: "uppercase",
                       color: "var(--gold)",
-                      borderBottom: "1px solid var(--gold)",
-                      paddingBottom: "1px",
+                      marginBottom: "0.4rem",
                     }}
                   >
-                    View →
-                  </span>
+                    {meta.size}&quot; · {meta.qty} {t("piecesSuffix")}
+                  </div>
+                  <h3
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      fontSize: "1.25rem",
+                      fontWeight: 500,
+                      color: "var(--navy)",
+                      marginBottom: "0.5rem",
+                    }}
+                  >
+                    {p.name}
+                  </h3>
+                  <p
+                    style={{
+                      fontSize: "0.82rem",
+                      color: "var(--text-muted)",
+                      lineHeight: 1.6,
+                      marginBottom: "1.2rem",
+                    }}
+                  >
+                    {p.desc}
+                  </p>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span
+                      style={{
+                        fontFamily: "var(--font-display)",
+                        fontSize: "1.3rem",
+                        fontWeight: 600,
+                        color: "var(--navy)",
+                      }}
+                    >
+                      ${meta.price}.00
+                    </span>
+                    <span
+                      style={{
+                        fontFamily: "var(--font-body)",
+                        fontSize: "0.65rem",
+                        fontWeight: 500,
+                        letterSpacing: "0.12em",
+                        textTransform: "uppercase",
+                        color: "var(--gold)",
+                        borderBottom: "1px solid var(--gold)",
+                        paddingBottom: "1px",
+                      }}
+                    >
+                      {t("viewLabel")} →
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          );
+        })}
       </div>
 
       <style>{`
