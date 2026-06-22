@@ -376,5 +376,169 @@
         "name": "Set Puzzle Shell"
       }
     ]
+  },
+  "About": {
+    "eyebrow": "Nuestra Historia",
+    "titleLine1": "Convertimos fotografías en",
+    "titleLine2": "recuerdos vivos",
+    "heroSub": "Memoir Gems nació de una creencia simple: tus fotos más importantes merecen vivir en un lugar mejor que la pantalla de un teléfono.",
+    "whyEyebrow": "Por qué empezamos",
+    "whyTitle": "Un recuerdo que puedes sostener — y tocar",
+    "p1": "Comenzamos Memoir Gems en Texas con una pregunta que no dejábamos de hacernos: ¿y si un imán de fotos pudiera hacer algo más que colgar en el refrigerador? ¿Y si pudiera abrir todo un mundo de recuerdos con un solo toque?",
+    "p2": "El Shell fue nuestra respuesta. Un imán de fotos rígido, impreso en UV, con un chip NFC integrado y un código QR dinámico — para que la foto del frente lleve a algo significativo en la parte de atrás. Un video de la boda. Un álbum compartido. Un memorial virtual. Un menú de restaurante que se actualiza sin reimprimir.",
+    "p3": "Cada Shell se envía listo para regalar en nuestra Bolsa Gather de la firma — papel de seda, cinta satinada en bronce, y un recuerdo que de verdad hace más que cualquier imán anterior.",
+    "p4": "Estamos en Texas y enviamos a todo Estados Unidos. Cada set se hace un pedido a la vez, con tus fotos, tus momentos, tu historia.",
+    "valuesEyebrow": "Lo que defendemos",
+    "values": [
+      {
+        "icon": "◆",
+        "title": "Siempre personalizado",
+        "desc": "Cada set se hace con tus fotos. Sin plantillas, sin imágenes de stock — tu recuerdo, exactamente como lo viviste."
+      },
+      {
+        "icon": "◎",
+        "title": "Tecnología con sentido",
+        "desc": "NFC + QR no es un truco. Es un puente entre lo físico y lo digital — la foto y la historia detrás de ella."
+      },
+      {
+        "icon": "✦",
+        "title": "Siempre listo para regalar",
+        "desc": "Cada Shell se envía en la Bolsa Gather. Nunca necesitas envolverlo ni prepararlo — está listo desde que llega."
+      }
+    ],
+    "ctaTitle": "¿Listo para comenzar tu colección?",
+    "browseProducts": "Ver productos →",
+    "contactUs": "Contáctanos"
+  },
+  "Contact": {
+    "eyebrow": "Ponte en contacto",
+    "title": "Contacta a Memoir Gems",
+    "responseNote": "Respondemos en pocas horas durante horario laboral (lun–vie, 9am–6pm CST).",
+    "howCanWeHelp": "¿Cómo podemos ayudarte?",
+    "items": [
+      {
+        "label": "Preguntas generales",
+        "icon": "✉️",
+        "val": "contact@memoirgems.com"
+      },
+      {
+        "label": "Soporte de pedidos",
+        "icon": "📦",
+        "val": "contact@memoirgems.com"
+      },
+      {
+        "label": "Empresas y pedidos al mayor",
+        "icon": "🏢",
+        "val": "contact@memoirgems.com"
+      },
+      {
+        "label": "Horario de producción",
+        "icon": "🕐",
+        "val": "Lun–Vie, 9am–6pm CST"
+      }
+    ],
+    "rushLabel": "Pedidos urgentes y de eventos:",
+    "rushDesc": "¿Necesitas tus Shells en menos de 7 días? Contáctanos antes de ordenar y confirmaremos si la producción urgente está disponible.",
+    "placeOrder": "Hacer un pedido →",
+    "messageReceivedTitle": "Mensaje recibido",
+    "messageReceivedBody": "Te responderemos a {email} en pocas horas.",
+    "yourName": "Tu nombre",
+    "emailAddress": "Correo electrónico",
+    "subject": "Asunto",
+    "subjectPlaceholder": "Pregunta sobre pedido, consulta B2B, etc.",
+    "message": "Mensaje",
+    "messagePlaceholder": "Cuéntanos cómo podemos ayudarte...",
+    "sending": "Enviando…",
+    "sendMessage": "Enviar mensaje →",
+    "errorGeneric": "Algo salió mal. Por favor escribe directamente a contact@memoirgems.com."
+  },
+  "Faq": {
+    "eyebrow": "Preguntas",
+    "title": "Preguntas frecuentes",
+    "stillHaveQuestions": "¿Aún tienes preguntas?",
+    "respondNote": "Respondemos en pocas horas durante horario laboral.",
+    "contactUs": "Contáctanos →",
+    "sections": [
+      {
+        "category": "Pedidos y producción",
+        "items": [
+          {
+            "q": "¿Cuánto tarda la producción?",
+            "a": "7 días hábiles desde que recibimos y aprobamos tus fotos. Hay producción urgente de 3 días disponible — contáctanos antes de ordenar."
+          },
+          {
+            "q": "¿Cómo envío mis fotos?",
+            "a": "Después de completar tu pedido, recibirás un enlace seguro para subir tus fotos por correo. Sube tus fotos directamente — no se necesitan apps ni cuentas."
+          },
+          {
+            "q": "¿Qué resolución de foto necesito?",
+            "a": "Recomendamos un mínimo de 1500×1500 píxeles para tamaños cuadrados y 1200×1800 píxeles para tamaños retrato. Las fotos originales del teléfono funcionan perfectamente. Te avisaremos si alguna no imprimirá bien antes de iniciar la producción."
+          },
+          {
+            "q": "¿Puedo enviar fotos distintas para cada Shell?",
+            "a": "Sí — cada Shell de tu set puede tener una foto diferente. Al subirlas, solo etiqueta cada archivo con el número del Shell (Shell 1, Shell 2, etc.)."
+          },
+          {
+            "q": "¿Puedo hacer cambios después de hacer mi pedido?",
+            "a": "Contáctanos dentro de las 24 horas de haber ordenado. Una vez que las fotos son aprobadas y la producción comienza, no es posible hacer cambios."
+          }
+        ]
+      },
+      {
+        "category": "Tecnología NFC y QR",
+        "items": [
+          {
+            "q": "¿Cómo funciona el chip NFC?",
+            "a": "Acerca cualquier teléfono compatible con NFC a una pulgada del Shell y abrirá automáticamente la URL que asignaste. No se necesita ninguna app — solo toca y se abre en tu navegador."
+          },
+          {
+            "q": "¿Qué teléfonos son compatibles con NFC?",
+            "a": "Todos los modelos de iPhone desde el iPhone 7. La mayoría de los teléfonos Android desde 2015. Si tu teléfono no es compatible con NFC, el código QR en la parte de atrás de cada Shell funciona para todos."
+          },
+          {
+            "q": "¿Puedo cambiar el enlace NFC después de recibir mis imanes?",
+            "a": "Sí, en cualquier momento. Inicia sesión en memoirgems.com, ve a Mis Shells y actualiza el enlace. Los cambios son instantáneos — no se necesita reimprimir."
+          },
+          {
+            "q": "¿A qué puedo enlazar mi Shell?",
+            "a": "Cualquier URL que funcione en un navegador: álbumes de Google Photos, álbumes compartidos de iCloud, videos de YouTube, Vimeo, carpetas de Google Drive, páginas memoriales, menús de restaurante, sitios de boda, y más."
+          }
+        ]
+      },
+      {
+        "category": "Envíos y empaque",
+        "items": [
+          {
+            "q": "¿Ofrecen envío gratis?",
+            "a": "Sí — envío estándar gratis en todos los pedidos de EE. UU. El envío internacional está disponible; las tarifas se calculan al pagar."
+          },
+          {
+            "q": "¿Qué es la Bolsa Gather?",
+            "a": "Nuestro empaque distintivo: una bolsa premium con cordón y textura de lino, papel de seda y cinta satinada en bronce. Cada set se envía dentro de ella. Está lista para regalar desde que llega."
+          },
+          {
+            "q": "¿Puedo enviar directamente a quien recibirá el regalo?",
+            "a": "Sí. Ingresa la dirección del destinatario al pagar. Incluiremos una nota de regalo escrita a mano si agregas una en las notas del pedido."
+          }
+        ]
+      },
+      {
+        "category": "Devoluciones y calidad",
+        "items": [
+          {
+            "q": "¿Qué pasa si no estoy satisfecho con el resultado?",
+            "a": "Respaldamos la calidad de nuestra impresión. Si tus Shells llegan dañados o la calidad de impresión no es la esperada, contáctanos dentro de 5 días y los reimprimiremos sin costo."
+          },
+          {
+            "q": "¿Ofrecen reembolsos?",
+            "a": "Como cada set se produce de forma personalizada con tus fotos, no ofrecemos reembolsos una vez que la producción comienza. Si hay un problema de calidad de nuestra parte, lo resolveremos."
+          },
+          {
+            "q": "¿Los imanes son seguros para niños?",
+            "a": "Los imanes Shell contienen chips NFC integrados e imanes de neodimio. No son adecuados para niños menores de 3 años. Mantener alejados de marcapasos y tarjetas de crédito."
+          }
+        ]
+      }
+    ]
   }
 }
