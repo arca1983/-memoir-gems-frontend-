@@ -155,7 +155,6 @@ export default function CustomizePage() {
                 [t("summaryShipping"), t("summaryShippingValue")],
                 [t("summaryProduction"), t("summaryProductionValue")],
                 [t("summaryPackaging"), t("summaryPackagingValue")],
-                [t("summaryNfc"), t("summaryNfcValue")],
               ].map(([k, v]) => (
                 <div key={k} style={{ display: "flex", justifyContent: "space-between", padding: "0.65rem 0", borderBottom: "1px solid var(--cream)", fontSize: "0.85rem" }}>
                   <span style={{ color: "var(--text-muted)" }}>{k}</span>
