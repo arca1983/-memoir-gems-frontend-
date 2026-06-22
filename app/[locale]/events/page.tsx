@@ -1,51 +1,20 @@
+"use client";
 import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 
-const EVENT_TYPES = [
-  {
-    icon: "💍",
-    title: "Weddings",
-    desc: "Shell magnets as guest favors, escort card holders, or a signature gift for the couple. Each Shell links to your wedding gallery so guests can relive the day.",
-    popular: "Wedding Story Pack — $89",
-  },
-  {
-    icon: "👶",
-    title: "Baby Showers & Births",
-    desc: "Announce the arrival with a set of Shell magnets. Family and friends get a keepsake — tap to see the newborn's first album.",
-    popular: "Classic 2×2 Set — $48",
-  },
-  {
-    icon: "🎓",
-    title: "Graduations",
-    desc: "Celebrate the milestone. Shell magnets featuring graduation portraits, each linked to a digital memory book or video tribute.",
-    popular: "Portrait 2×3 Set — $52",
-  },
-  {
-    icon: "🎂",
-    title: "Milestone Birthdays",
-    desc: "The perfect gift for 40th, 50th, 60th birthdays. A curated set of memory photos linked to a video message from friends and family.",
-    popular: "Story 2.5×3.5 Set — $64",
-  },
-  {
-    icon: "🕊️",
-    title: "Memorials & Tributes",
-    desc: "Honor a life well lived. Memorial Shell sets with portrait photos, each linking to a digital tribute page family can access forever.",
-    popular: "Grand 3×3 Set — $74",
-  },
-  {
-    icon: "🥂",
-    title: "Corporate Events",
-    desc: "Branded Shell magnets for team events, client gifts, and product launches. Link to your brand page, campaign, or team gallery.",
-    popular: "B2B Programs available",
-  },
-];
+type EventType = { icon: string; title: string; desc: string; popular: string };
 
 export default function EventsPage() {
+  const locale = useLocale();
+  const t = useTranslations("Events");
+  const types = t.raw("types") as EventType[];
+
   return (
     <div style={{ background: "var(--ivory)" }}>
       {/* Header */}
       <div style={{ background: "var(--navy)", padding: "5rem 2rem", textAlign: "center" }}>
         <div className="section-label" style={{ color: "var(--gold-light)", marginBottom: "0.8rem" }}>
-          ◆ Events & Occasions
+          ◆ {t("eyebrow")}
         </div>
         <h1
           style={{
@@ -56,10 +25,10 @@ export default function EventsPage() {
             marginBottom: "1rem",
           }}
         >
-          Shells for Every Milestone
+          {t("title")}
         </h1>
         <p style={{ color: "var(--taupe)", fontSize: "0.9rem", maxWidth: 480, margin: "0 auto" }}>
-          From weddings to memorials — Memoir Gems transforms any occasion into a lasting keepsake.
+          {t("sub")}
         </p>
       </div>
 
@@ -73,7 +42,7 @@ export default function EventsPage() {
           }}
           className="events-grid"
         >
-          {EVENT_TYPES.map((ev) => (
+          {types.map((ev) => (
             <div
               key={ev.title}
               style={{
@@ -119,7 +88,7 @@ export default function EventsPage() {
       <div style={{ background: "var(--cream)", padding: "5rem 2rem", textAlign: "center" }}>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <div className="section-label" style={{ marginBottom: "1rem" }}>
-            ◆ Event & Bulk Orders
+            ◆ {t("bulkEyebrow")}
           </div>
           <h2
             style={{
@@ -130,22 +99,20 @@ export default function EventsPage() {
               marginBottom: "1.2rem",
             }}
           >
-            Planning a Large Event?
+            {t("bulkTitle")}
           </h2>
           <p style={{ fontSize: "0.9rem", color: "var(--text-mid)", lineHeight: 1.8, marginBottom: "2rem" }}>
-            We work with event planners, wedding coordinators, and corporate teams on bulk Shell
-            orders. Custom packaging, priority production, and dedicated coordination available
-            for orders of 10+ sets. Contact us to discuss your event.
+            {t("bulkDesc")}
           </p>
           <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/en/contact">
+            <Link href={`/${locale}/contact`}>
               <span className="btn-primary" style={{ fontSize: "0.85rem" }}>
-                Get Event Quote →
+                {t("getEventQuote")}
               </span>
             </Link>
-            <Link href="/en/b2b">
+            <Link href={`/${locale}/b2b`}>
               <span className="btn-outline" style={{ fontSize: "0.85rem" }}>
-                B2B Programs
+                {t("b2bPrograms")}
               </span>
             </Link>
           </div>
@@ -163,11 +130,11 @@ export default function EventsPage() {
             marginBottom: "1.5rem",
           }}
         >
-          Create Your Event Shells
+          {t("ctaTitle")}
         </h2>
-        <Link href="/en/customize">
+        <Link href={`/${locale}/customize`}>
           <span className="btn-gold" style={{ fontSize: "0.85rem" }}>
-            Start Customizing →
+            {t("startCustomizing")}
           </span>
         </Link>
       </div>
