@@ -1,51 +1,22 @@
+"use client";
 import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 
-const PROGRAMS = [
-  {
-    title: "Restaurant & Café Magnets",
-    desc: "Replace static menu cards with Shell magnets. Tap to see today's specials, full menu, or reservation link. Update the URL instantly — no reprinting.",
-    icon: "🍽️",
-  },
-  {
-    title: "Real Estate Closing Gifts",
-    desc: "Give clients a Shell magnet set featuring their new home. Each Shell links to a video walkthrough or a personalized welcome message.",
-    icon: "🏠",
-  },
-  {
-    title: "Hotel & Hospitality",
-    desc: "Custom Shell magnets in rooms and suites that link to hotel services, local guides, or concierge pages. A premium branded touch.",
-    icon: "🏨",
-  },
-  {
-    title: "Wedding Planners",
-    desc: "Offer Shell magnets as a premium add-on for your couples — guest favors, seating cards, or a signature keepsake for the couple.",
-    icon: "💍",
-  },
-  {
-    title: "Photographers",
-    desc: "Upsell Shell magnet packages to every client. We handle printing and production — you deliver a premium physical product with your gallery built in.",
-    icon: "📷",
-  },
-  {
-    title: "Corporate & Team",
-    desc: "Employee recognition, client gifts, product launches, trade shows. Custom Shell sets with your brand photography and links.",
-    icon: "🏢",
-  },
-];
-
-const TIERS = [
-  { name: "Partner", min: "5 sets/mo", discount: "10% off", perks: "Priority production, account manager" },
-  { name: "Studio", min: "15 sets/mo", discount: "18% off", perks: "Custom packaging option, net-30 billing" },
-  { name: "Enterprise", min: "30+ sets/mo", discount: "Custom", perks: "White-label option, dedicated account team" },
-];
+type Program = { title: string; desc: string; icon: string };
+type Tier = { name: string; min: string; discount: string; perks: string };
 
 export default function B2BPage() {
+  const locale = useLocale();
+  const t = useTranslations("B2b");
+  const programs = t.raw("programs") as Program[];
+  const tiers = t.raw("tiers") as Tier[];
+
   return (
     <div style={{ background: "var(--ivory)" }}>
       {/* Header */}
       <div style={{ background: "var(--navy)", padding: "5rem 2rem", textAlign: "center" }}>
         <div className="section-label" style={{ color: "var(--gold-light)", marginBottom: "0.8rem" }}>
-          ◆ B2B Programs
+          ◆ {t("eyebrow")}
         </div>
         <h1
           style={{
@@ -56,18 +27,17 @@ export default function B2BPage() {
             marginBottom: "1rem",
           }}
         >
-          Memoir Gems for Business
+          {t("title")}
         </h1>
         <p style={{ color: "var(--taupe)", fontSize: "0.9rem", maxWidth: 520, margin: "0 auto" }}>
-          Premium branded Shell magnets for restaurants, realtors, photographers, hotels,
-          and corporate teams. Volume pricing and dedicated support.
+          {t("sub")}
         </p>
       </div>
 
       {/* Programs grid */}
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "5rem 2rem" }}>
         <div className="section-label" style={{ textAlign: "center", marginBottom: "3rem" }}>
-          ◆ Who We Work With
+          ◆ {t("whoWeWorkWith")}
         </div>
         <div
           style={{
@@ -77,7 +47,7 @@ export default function B2BPage() {
           }}
           className="b2b-grid"
         >
-          {PROGRAMS.map((p) => (
+          {programs.map((p) => (
             <div
               key={p.title}
               style={{
@@ -110,7 +80,7 @@ export default function B2BPage() {
       <div style={{ background: "var(--cream)", padding: "5rem 2rem" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <div className="section-label" style={{ textAlign: "center", marginBottom: "3rem" }}>
-            ◆ Volume Pricing
+            ◆ {t("volumePricing")}
           </div>
           <div
             style={{
@@ -120,7 +90,7 @@ export default function B2BPage() {
             }}
             className="tiers-grid"
           >
-            {TIERS.map((tier) => (
+            {tiers.map((tier) => (
               <div
                 key={tier.name}
                 style={{
@@ -149,7 +119,7 @@ export default function B2BPage() {
                     marginBottom: "1.5rem",
                   }}
                 >
-                  From {tier.min}
+                  {t("fromPrefix")} {tier.min}
                 </div>
                 <div
                   style={{
@@ -176,7 +146,7 @@ export default function B2BPage() {
               marginTop: "1.5rem",
             }}
           >
-            All tiers include NFC + QR on every Shell and Gather Pouch packaging.
+            {t("tiersNote")}
           </p>
         </div>
       </div>
@@ -192,20 +162,20 @@ export default function B2BPage() {
             marginBottom: "1rem",
           }}
         >
-          Let's Build Your B2B Program
+          {t("ctaTitle")}
         </h2>
         <p style={{ color: "var(--taupe)", fontSize: "0.9rem", maxWidth: 460, margin: "0 auto 2rem" }}>
-          Tell us about your business and we'll put together a custom proposal within 24 hours.
+          {t("ctaSub")}
         </p>
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-          <Link href="/en/contact">
+          <Link href={`/${locale}/contact`}>
             <span className="btn-gold" style={{ fontSize: "0.85rem" }}>
-              Request B2B Proposal →
+              {t("requestProposal")}
             </span>
           </Link>
-          <Link href="/en/products">
+          <Link href={`/${locale}/products`}>
             <span className="btn-outline" style={{ fontSize: "0.85rem", borderColor: "var(--taupe)", color: "var(--ivory)" }}>
-              Browse Products
+              {t("browseProducts")}
             </span>
           </Link>
         </div>
