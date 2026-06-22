@@ -100,7 +100,7 @@ export default function ProductsPage() {
           Memoir Gems Shell Products
         </h1>
         <p style={{ fontSize: "0.9rem", color: "var(--taupe)", maxWidth: 500, margin: "0 auto" }}>
-          Five Shell sizes plus exclusive puzzle sets. NFC + QR on every piece. Ships gift-ready in 7 days.
+          Five Shell sizes plus exclusive puzzle sets. Ships gift-ready in 7 days.
         </p>
       </div>
 
