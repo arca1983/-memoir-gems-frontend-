@@ -1,28 +1,34 @@
+"use client";
 import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 import NewsletterForm from "@/components/NewsletterForm";
 
-const SHOP_LINKS = [
-  { label: "All Products", href: "/en/products" },
-  { label: "Puzzle Shell Set", href: "/en/products/puzzle-shells" },
-  { label: "Customize", href: "/en/customize" },
-  { label: "Events", href: "/en/events" },
-  { label: "B2B Programs", href: "/en/b2b" },
-];
-
-const COMPANY_LINKS = [
-  { label: "About", href: "/en/about" },
-  { label: "How It Works", href: "/en/how-it-works" },
-  { label: "Our Story", href: "/en/about" },
-];
-
-const HELP_LINKS = [
-  { label: "FAQ", href: "/en/faq" },
-  { label: "Shipping & Returns", href: "/en/shipping-returns" },
-  { label: "Contact", href: "/en/contact" },
-  { label: "Terms & Conditions", href: "/en/terms" },
-];
-
 export default function Footer() {
+  const locale = useLocale();
+  const t = useTranslations("Footer");
+  const p = (path: string) => `/${locale}/${path}`;
+
+  const SHOP_LINKS = [
+    { label: t("shopAll"), href: p("products") },
+    { label: t("shopPuzzle"), href: p("products/puzzle-shells") },
+    { label: t("shopCustomize"), href: p("customize") },
+    { label: t("shopEvents"), href: p("events") },
+    { label: t("shopB2b"), href: p("b2b") },
+  ];
+
+  const COMPANY_LINKS = [
+    { label: t("companyAbout"), href: p("about") },
+    { label: t("companyHow"), href: p("how-it-works") },
+    { label: t("companyStory"), href: p("about") },
+  ];
+
+  const HELP_LINKS = [
+    { label: t("helpFaq"), href: p("faq") },
+    { label: t("helpShipping"), href: p("shipping-returns") },
+    { label: t("helpContact"), href: p("contact") },
+    { label: t("helpTerms"), href: p("terms") },
+  ];
+
   return (
     <footer style={{ background: "var(--navy)", color: "var(--ivory)" }}>
       <div
@@ -62,11 +68,11 @@ export default function Footer() {
                 fontWeight: 500,
               }}
             >
-              Treasure Your Story
+              {t("tagline")}
             </div>
           </div>
           <p style={{ fontSize: "0.82rem", color: "var(--taupe)", lineHeight: 1.7, maxWidth: 240 }}>
-            Custom photo magnets embedded with NFC & QR technology. Crafted with care. Delivered gift-ready.
+            {t("blurb")}
           </p>
           <div style={{ display: "flex", gap: "1rem", marginTop: "1.5rem" }}>
             {["◎ Instagram", "f Facebook", "◆ Pinterest", "✉ Email"].map((s) => (
@@ -94,7 +100,7 @@ export default function Footer() {
               marginBottom: "1.2rem",
             }}
           >
-            Shop
+            {t("shopHeading")}
           </h4>
           {SHOP_LINKS.map((item) => (
             <Link
@@ -120,7 +126,7 @@ export default function Footer() {
               marginBottom: "1.2rem",
             }}
           >
-            Company
+            {t("companyHeading")}
           </h4>
           {COMPANY_LINKS.map((item) => (
             <Link
@@ -146,7 +152,7 @@ export default function Footer() {
               marginBottom: "1.2rem",
             }}
           >
-            Help
+            {t("helpHeading")}
           </h4>
           {HELP_LINKS.map((item) => (
             <Link
@@ -172,10 +178,10 @@ export default function Footer() {
               marginBottom: "1.2rem",
             }}
           >
-            Stay Connected
+            {t("stayConnected")}
           </h4>
           <p style={{ fontSize: "0.8rem", color: "var(--taupe)", marginBottom: "1rem", lineHeight: 1.6 }}>
-            New collections, stories, and special offers — direct to you.
+            {t("newsletterBlurb")}
           </p>
           <NewsletterForm />
         </div>
@@ -195,10 +201,10 @@ export default function Footer() {
           letterSpacing: "0.05em",
         }}
       >
-        <span>© 2026 Memoir Gems LLC. All rights reserved.</span>
+        <span>{t("copyright")}</span>
         <div style={{ display: "flex", gap: "1.5rem" }}>
-          <Link href="/en/terms" style={{ color: "inherit" }}>Terms & Conditions</Link>
-          <Link href="/en/shipping-returns" style={{ color: "inherit" }}>Shipping & Returns</Link>
+          <Link href={p("terms")} style={{ color: "inherit" }}>{t("helpTerms")}</Link>
+          <Link href={p("shipping-returns")} style={{ color: "inherit" }}>{t("helpShipping")}</Link>
           <span>contact@memoirgems.com</span>
         </div>
       </div>
