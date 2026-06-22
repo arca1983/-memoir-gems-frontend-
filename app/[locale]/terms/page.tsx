@@ -47,15 +47,6 @@ By submitting photos to us, you grant Memoir Gems a limited license to use those
   },
   {
     num: "6",
-    title: "NFC & QR Technology",
-    body: `Each Shell includes an embedded NFC chip and printed QR code. The URL associated with each chip is initially unassigned. You may configure and update your Shell's URL at any time through your Memoir Gems account.
-
-Memoir Gems is not responsible for the content of any third-party URLs you link to your Shells. You are responsible for ensuring that any URL you assign complies with applicable law and does not link to offensive, harmful, or illegal content.
-
-NFC chip functionality depends on the user's device compatibility. Not all devices support NFC reading. The QR code on the reverse of each Shell provides a universal fallback.`,
-  },
-  {
-    num: "7",
     title: "Limitation of Liability",
     body: `To the maximum extent permitted by law, Memoir Gems LLC shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of our products or website.
 
@@ -64,7 +55,7 @@ Our liability for any direct damages shall not exceed the purchase price of the 
 We do not warrant that our website will be uninterrupted or error-free. We reserve the right to suspend or discontinue any part of our service at any time.`,
   },
   {
-    num: "8",
+    num: "7",
     title: "Privacy",
     body: `We collect and use your personal information (name, email, shipping address, photos) only to fulfill your order and communicate with you about it. We do not sell or share your personal data with third parties for marketing purposes.
 
@@ -73,21 +64,21 @@ Photos submitted for production are stored only as long as needed to complete an
 For questions about your data, contact contact@memoirgems.com.`,
   },
   {
-    num: "9",
+    num: "8",
     title: "Governing Law",
     body: `These Terms and Conditions are governed by the laws of the State of Texas, United States. Any disputes shall be resolved in the courts of Texas.
 
 If any provision of these terms is found to be unenforceable, the remaining provisions continue in full force.`,
   },
   {
-    num: "10",
+    num: "9",
     title: "Changes to These Terms",
     body: `We may update these Terms and Conditions at any time. Changes take effect when posted to this page. Continued use of memoirgems.com after changes are posted constitutes acceptance of the updated terms.
 
 Last updated: June 2026`,
   },
   {
-    num: "11",
+    num: "10",
     title: "Contact",
     body: `Memoir Gems LLC
 contact@memoirgems.com
