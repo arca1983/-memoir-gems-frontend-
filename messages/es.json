@@ -1,0 +1,139 @@
+{
+  "Nav": {
+    "announcement": "♦ Envío gratis en EE. UU. en todos los sets  ·  Listo en 7 días  ·  NFC + QR en todos los tamaños ♦",
+    "tagline": "Atesora tu historia",
+    "products": "Productos",
+    "customize": "Personalizar",
+    "events": "Eventos",
+    "howItWorks": "Cómo funciona",
+    "b2b": "Empresas",
+    "faq": "Preguntas",
+    "contact": "Contacto",
+    "orderNow": "Ordenar ahora"
+  },
+  "Footer": {
+    "tagline": "Atesora tu historia",
+    "blurb": "Imanes de fotos personalizados con tecnología NFC y QR. Hechos con dedicación. Listos para regalar.",
+    "shopHeading": "Tienda",
+    "shopAll": "Todos los productos",
+    "shopPuzzle": "Set Puzzle Shell",
+    "shopCustomize": "Personalizar",
+    "shopEvents": "Eventos",
+    "shopB2b": "Programas para empresas",
+    "companyHeading": "Empresa",
+    "companyAbout": "Nosotros",
+    "companyHow": "Cómo funciona",
+    "companyStory": "Nuestra historia",
+    "helpHeading": "Ayuda",
+    "helpFaq": "Preguntas frecuentes",
+    "helpShipping": "Envíos y devoluciones",
+    "helpContact": "Contacto",
+    "helpTerms": "Términos y condiciones",
+    "stayConnected": "Mantente conectado",
+    "newsletterBlurb": "Nuevas colecciones, historias y ofertas especiales — directo para ti.",
+    "copyright": "© 2026 Memoir Gems LLC. Todos los derechos reservados."
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "Recuerdos en foto, hechos a mano",
+      "titleLine1": "Los momentos que vale la pena guardar,",
+      "titleAccent": "hechos tangibles.",
+      "sub": "Imanes de fotos personalizados, hechos a mano, con las personas, mascotas, lugares y recuerdos que dieron forma a tu historia.",
+      "ctaPrimary": "Crea tus Gemas",
+      "ctaSecondary": "Ver Gemas por Ocasión",
+      "reassure": "Hechos a mano en lotes pequeños · Envío gratis en EE. UU. desde $35"
+    },
+    "trust": {
+      "item1Title": "Hecho a mano",
+      "item1Sub": "Elaborado a mano, en lotes pequeños",
+      "item2Title": "Recorta y previsualiza",
+      "item2Sub": "Ve cada foto antes de comprar",
+      "item3Title": "Listo para regalar",
+      "item3Sub": "Empaque hermoso en cada pedido",
+      "item4Title": "Hecho para durar",
+      "item4Sub": "Recuerdos para el día a día"
+    },
+    "how": {
+      "eyebrow": "Cómo funciona",
+      "title": "De la foto al recuerdo, en seis sencillos pasos",
+      "steps": [
+        { "title": "Elige tu tamaño", "desc": "Cuadrado, rectangular o redondo — elige la forma de tu Gema." },
+        { "title": "Elige tu set", "desc": "Desde una historia de 5 Gemas hasta una colección de 50." },
+        { "title": "Sube tus fotos", "desc": "Arrastra a las personas, mascotas y lugares que importan." },
+        { "title": "Recorta y previsualiza", "desc": "Encuadra cada imagen exactamente como la quieres." },
+        { "title": "Paga de forma segura", "desc": "Un proceso de pago simple y seguro en pocos pasos." },
+        { "title": "Lo hacemos y lo enviamos", "desc": "Elaboramos, empacamos y enviamos tus recuerdos con cuidado." }
+      ]
+    },
+    "categories": {
+      "eyebrow": "Compra por formato",
+      "title": "Encuentra la Gema ideal para tu historia",
+      "sub": "Cinco formatos hechos a mano, pensados para verse y tocarse todos los días.",
+      "linkLabel": "Personalizar",
+      "items": [
+        { "title": "Gemas Cuadradas", "desc": "El clásico recuerdo. Nítido, equilibrado y perfecto para regalar.", "price": "desde $7" },
+        { "title": "Gemas Rectangulares", "desc": "Pensadas para retratos y momentos que necesitan un poco más de espacio.", "price": "desde $8" },
+        { "title": "Sets de Regalo", "desc": "Colecciones listas para regalar, envueltas y selladas en dorado.", "price": "desde $39" },
+        { "title": "Gemas Conmemorativas", "desc": "Una forma entrañable de mantener cerca a quienes amamos.", "price": "desde $8" },
+        { "title": "Gemas para Negocios", "desc": "Códigos QR, logos y promociones — recuerdos que mantienen tu marca presente.", "price": "desde $2.50" }
+      ]
+    },
+    "life": {
+      "eyebrow": "Por ocasión",
+      "title": "Un recuerdo para cada etapa de tu vida",
+      "sub": "Colecciones curadas para los momentos, personas y lugares que vale la pena recordar.",
+      "items": ["Gemas Familiares", "Gemas de Mascotas", "Gemas de Boda", "Bebés y Logros", "Gemas Conmemorativas", "Gemas de Viaje", "Gemas de Graduación", "Sets de Regalo Navideños"]
+    },
+    "packaging": {
+      "eyebrow": "El unboxing",
+      "title": "Listo para regalar desde que llega.",
+      "desc": "Cada pedido se prepara con una presentación cálida y artesanal — pensada para sentirse personal, cuidada y lista para regalar.",
+      "items": ["Tarjeta de agradecimiento", "Tarjeta de cuidado", "Envoltorio de papel", "Sello dorado", "Nota de regalo opcional", "Caja premium opcional"]
+    },
+    "b2b": {
+      "eyebrow": "Para empresas y eventos",
+      "title": "Recuerdos al por mayor que te mantienen presente",
+      "sub": "Imanes personalizados para restaurantes, agentes inmobiliarios, bodas, escuelas y equipos — desde unas pocas piezas hasta cincuenta mil.",
+      "mobileTeaser": "Restaurantes, inmobiliarias, bodas, escuelas y equipos — pedidos al por mayor desde unas pocas piezas hasta cincuenta mil.",
+      "cta": "Solicita una cotización al mayor",
+      "chips": [
+        { "title": "Imanes QR para Restaurantes", "sub": "Menús y reseñas, en el refrigerador" },
+        { "title": "Imanes de Tarjeta de Presentación", "sub": "Tu contacto, siempre a la mano" },
+        { "title": "Imanes para Agentes Inmobiliarios", "sub": "Mantente presente en cada hogar" },
+        { "title": "Imanes para Salones de Belleza", "sub": "Reagendar nunca fue tan fácil" },
+        { "title": "Imanes para Contratistas", "sub": "Tu número, siempre disponible" },
+        { "title": "Recuerdos de Boda", "sub": "Detalles que tus invitados van a adorar" },
+        { "title": "Imanes Escolares", "sub": "Fotos de la clase y recaudación de fondos" },
+        { "title": "Recuerdos de Eventos", "sub": "Detalles memorables para llevar a casa" }
+      ]
+    },
+    "story": {
+      "eyebrow": "Nuestra historia",
+      "quotePre": "Una memoria no es cada detalle de una vida. Son los momentos emotivos, los puntos de inflexión, las personas, lugares y capítulos que",
+      "quoteAccent": "se quedan con nosotros.",
+      "quotePost": "Memoir Gems convierte esos momentos en pequeños recuerdos magnéticos que puedes ver, tocar, regalar y recordar cada día.",
+      "signature": "— Pequeños tesoros de tu historia de vida"
+    },
+    "faq": {
+      "eyebrow": "Bueno saberlo",
+      "title": "Preguntas frecuentes",
+      "items": [
+        { "q": "¿Qué tipo de fotos funciona mejor?", "a": "Las fotos nítidas y bien iluminadas, con el sujeto cerca del centro, se ven hermosas. Las imágenes de mayor resolución dan los resultados más definidos, pero nuestra herramienta de vista previa te permite recortar y hacer zoom para que cada Gema luzca perfecta antes de ordenar." },
+        { "q": "¿Puedo usar fotos distintas en un mismo set?", "a": "Claro que sí. Cada Gema de tu set puede ser una foto diferente — combina familia, mascotas, viajes y momentos especiales en un solo pedido. Sube tantas fotos como tu set lo permita." },
+        { "q": "¿Son imanes flexibles?", "a": "No — y es intencional. Cada Gema está hecha sobre una base firme y rígida, en lugar de una lámina delgada y flexible, para que tu foto se mantenga perfectamente plana, nítida y protegida por años. Un imán resistente la sujeta con firmeza en refrigeradores, casilleros y archivadores." },
+        { "q": "¿Puedo recortar mis fotos antes de pagar?", "a": "Sí. Nuestra vista previa en vivo te permite hacer zoom, rotar y encuadrar cada foto en la forma de Gema elegida, para que sepas exactamente cómo se verá cada recuerdo antes de pagar." },
+        { "q": "¿Ofrecen empaque de regalo?", "a": "Cada pedido llega listo para regalar, con tarjeta de agradecimiento, tarjeta de cuidado, envoltorio de papel y sello dorado. También puedes agregar una nota de regalo y una caja premium al pagar." },
+        { "q": "¿Hacen pedidos para empresas o eventos?", "a": "Sí — desde menús con QR y tarjetas de presentación hasta recuerdos de boda y recaudaciones escolares. Elige el Set al por mayor de 50 Gemas o solicita una cotización personalizada para pedidos más grandes." },
+        { "q": "¿Cuánto tarda la producción?", "a": "La mayoría de los pedidos se hacen a mano y se envían en 3 a 5 días hábiles. Los pedidos grandes, al por mayor o para eventos, pueden tardar un poco más — te confirmaremos los tiempos directamente." },
+        { "q": "¿Hacen envíos a todo Estados Unidos?", "a": "Sí. Enviamos a nivel nacional, con envío gratis en pedidos desde $35. Recibirás el número de rastreo en cuanto tus recuerdos estén en camino." }
+      ]
+    },
+    "ctaBand": {
+      "eyebrow": "Comienza tu colección",
+      "title": "Los momentos que vale la pena guardar te están esperando.",
+      "sub": "Convierte tus fotos favoritas en pequeños tesoros que verás y te harán sonreír todos los días.",
+      "cta": "Crea tus Gemas"
+    },
+    "stickyCta": "Crea tus Gemas"
+  }
+}

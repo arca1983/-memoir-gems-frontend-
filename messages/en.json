@@ -1,0 +1,139 @@
+{
+  "Nav": {
+    "announcement": "♦ Free U.S. shipping on every set  ·  Ships in 7 days  ·  NFC + QR on all Shell sizes ♦",
+    "tagline": "Treasure Your Story",
+    "products": "Products",
+    "customize": "Customize",
+    "events": "Events",
+    "howItWorks": "How It Works",
+    "b2b": "B2B",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "orderNow": "Order Now"
+  },
+  "Footer": {
+    "tagline": "Treasure Your Story",
+    "blurb": "Custom photo magnets embedded with NFC & QR technology. Crafted with care. Delivered gift-ready.",
+    "shopHeading": "Shop",
+    "shopAll": "All Products",
+    "shopPuzzle": "Puzzle Shell Set",
+    "shopCustomize": "Customize",
+    "shopEvents": "Events",
+    "shopB2b": "B2B Programs",
+    "companyHeading": "Company",
+    "companyAbout": "About",
+    "companyHow": "How It Works",
+    "companyStory": "Our Story",
+    "helpHeading": "Help",
+    "helpFaq": "FAQ",
+    "helpShipping": "Shipping & Returns",
+    "helpContact": "Contact",
+    "helpTerms": "Terms & Conditions",
+    "stayConnected": "Stay Connected",
+    "newsletterBlurb": "New collections, stories, and special offers — direct to you.",
+    "copyright": "© 2026 Memoir Gems LLC. All rights reserved."
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "Custom photo keepsakes",
+      "titleLine1": "The moments worth keeping,",
+      "titleAccent": "made tangible.",
+      "sub": "Handcrafted custom photo magnets made from the people, pets, places, and memories that shaped your story.",
+      "ctaPrimary": "Create Your Gems",
+      "ctaSecondary": "Shop Life Events",
+      "reassure": "Handcrafted in small batches · Free U.S. shipping over $35"
+    },
+    "trust": {
+      "item1Title": "Handcrafted",
+      "item1Sub": "Made by hand, in small batches",
+      "item2Title": "Crop & preview",
+      "item2Sub": "See every photo before you buy",
+      "item3Title": "Gift-ready",
+      "item3Sub": "Beautiful packaging, every order",
+      "item4Title": "Made to last",
+      "item4Sub": "Keepsakes for everyday life"
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "title": "From photo to keepsake in six small steps",
+      "steps": [
+        { "title": "Choose your size", "desc": "Square, rectangle, or round — pick the shape of your Gem." },
+        { "title": "Choose your set", "desc": "From a 5-Gem story to a 50-Gem legacy collection." },
+        { "title": "Upload your photos", "desc": "Drag in the people, pets, and places that matter." },
+        { "title": "Crop & preview", "desc": "Frame each image exactly how you want it." },
+        { "title": "Checkout securely", "desc": "A simple, safe checkout in just a few taps." },
+        { "title": "We craft & ship", "desc": "We make, pack, and send your keepsakes with care." }
+      ]
+    },
+    "categories": {
+      "eyebrow": "Shop by format",
+      "title": "Find the right Gem for your story",
+      "sub": "Five handcrafted formats, each made to be seen and touched every day.",
+      "linkLabel": "Customize",
+      "items": [
+        { "title": "Square Photo Gems", "desc": "The classic keepsake. Crisp, balanced, and endlessly giftable.", "price": "from $7" },
+        { "title": "Rectangle Photo Gems", "desc": "Made for portraits and the moments that need a little more room.", "price": "from $8" },
+        { "title": "Gift Sets", "desc": "Ready-to-give collections, wrapped and finished with a gold seal.", "price": "from $39" },
+        { "title": "Memorial Gems", "desc": "A gentle way to keep the people and pets we love close.", "price": "from $8" },
+        { "title": "Business Gems", "desc": "QR codes, logos, and promos — keepsakes that keep your brand close.", "price": "from $2.50" }
+      ]
+    },
+    "life": {
+      "eyebrow": "Life Events",
+      "title": "A keepsake for every chapter",
+      "sub": "Curated collections for the milestones, people, and places worth remembering.",
+      "items": ["Family Gems", "Pet Gems", "Wedding Gems", "Baby & Milestone", "Memorial Gems", "Travel Gems", "Graduation Gems", "Holiday Gift Sets"]
+    },
+    "packaging": {
+      "eyebrow": "The unboxing",
+      "title": "Gift-ready from the moment it arrives.",
+      "desc": "Every order is carefully prepared with a warm, handcrafted presentation — designed to feel personal, thoughtful, and ready to gift.",
+      "items": ["Thank-you card", "Care card", "Paper wrap", "Gold seal", "Optional gift note", "Optional premium box"]
+    },
+    "b2b": {
+      "eyebrow": "For business & events",
+      "title": "Bulk keepsakes that keep you close",
+      "sub": "Custom magnets for restaurants, realtors, weddings, schools, and teams — from a handful to fifty thousand.",
+      "mobileTeaser": "Restaurants, realtors, weddings, schools & teams — bulk orders from a handful to fifty thousand pieces.",
+      "cta": "Request a bulk quote",
+      "chips": [
+        { "title": "Restaurant QR Magnets", "sub": "Menus & reviews, on the fridge" },
+        { "title": "Business Card Magnets", "sub": "Contact info they'll keep" },
+        { "title": "Realtor Magnets", "sub": "Stay top-of-mind at home" },
+        { "title": "Salon Magnets", "sub": "Rebooking made easy" },
+        { "title": "Contractor Magnets", "sub": "Your number, always handy" },
+        { "title": "Wedding Favors", "sub": "Keepsakes guests adore" },
+        { "title": "School Magnets", "sub": "Class photos & fundraisers" },
+        { "title": "Event Keepsakes", "sub": "Memorable take-homes" }
+      ]
+    },
+    "story": {
+      "eyebrow": "Our Story",
+      "quotePre": "A memoir is not every detail of a life. It is the emotional moments, turning points, people, places, and chapters that",
+      "quoteAccent": "stay with us.",
+      "quotePost": "Memoir Gems turns those moments into small magnetic keepsakes you can see, touch, gift, and remember every day.",
+      "signature": "— Little treasures from your life story"
+    },
+    "faq": {
+      "eyebrow": "Good to know",
+      "title": "Frequently asked questions",
+      "items": [
+        { "q": "What kind of photos work best?", "a": "Clear, well-lit photos with your subject close to the center work beautifully. Higher-resolution images give the sharpest results, but our preview tool lets you crop and zoom so every Gem looks its best before you order." },
+        { "q": "Can I use different photos in one pack?", "a": "Absolutely. Every Gem in your set can be a different photo — mix family, pets, trips, and milestones in a single order. Upload as many photos as your story set allows." },
+        { "q": "Are these flexible magnets?", "a": "No — and that's intentional. Each Gem is crafted on a firm, rigid base rather than a thin bendable sheet, so your photo stays perfectly flat, crisp, and protected for years. A strong magnetic backing holds it securely on refrigerators, lockers, and filing cabinets." },
+        { "q": "Can I crop my photos before checkout?", "a": "You can. Our live preview lets you zoom, rotate, and frame each photo in your chosen Gem shape, so you'll know exactly how every keepsake will look before you pay." },
+        { "q": "Do you offer gift packaging?", "a": "Every order arrives gift-ready with a thank-you card, care card, paper wrap, and gold seal. You can also add an optional gift note and premium box at checkout." },
+        { "q": "Do you make business or event orders?", "a": "Yes — from QR menus and business cards to wedding favors and school fundraisers. Choose the 50-Gem Bulk Set or request a custom quote for larger runs." },
+        { "q": "How long does production take?", "a": "Most orders are handcrafted and shipped within 3–5 business days. Larger bulk and event orders may take a little longer — we'll confirm timing with you directly." },
+        { "q": "Do you ship across the U.S.?", "a": "We do. We ship nationwide, with free shipping on orders over $35. You'll receive tracking as soon as your keepsakes are on their way." }
+      ]
+    },
+    "ctaBand": {
+      "eyebrow": "Start your collection",
+      "title": "The moments worth keeping are waiting.",
+      "sub": "Turn your favorite photos into little treasures you'll see and smile at every day.",
+      "cta": "Create Your Gems"
+    },
+    "stickyCta": "Create Your Gems"
+  }
+}
