@@ -1,6 +1,6 @@
 {
   "Nav": {
-    "announcement": "♦ Envío gratis en EE. UU. en todos los sets  ·  Listo en 7 días  ·  NFC + QR en todos los tamaños ♦",
+    "announcement": "♦ Envío gratis en EE. UU. en todos los sets  ·  Listo en 7 días  ·  Hecho a mano con amor ♦",
     "tagline": "Atesora tu historia",
     "products": "Productos",
     "customize": "Personalizar",
@@ -13,7 +13,7 @@
   },
   "Footer": {
     "tagline": "Atesora tu historia",
-    "blurb": "Imanes de fotos personalizados con tecnología NFC y QR. Hechos con dedicación. Listos para regalar.",
+    "blurb": "Imanes de fotos personalizados, hechos con dedicación. Listos para regalar.",
     "shopHeading": "Tienda",
     "shopAll": "Todos los productos",
     "shopPuzzle": "Set Puzzle Shell",
@@ -111,7 +111,7 @@
         },
         {
           "title": "Gemas para Negocios",
-          "desc": "Códigos QR, logos y promociones — recuerdos que mantienen tu marca presente.",
+          "desc": "Logos, promociones y marca — recuerdos que mantienen tu negocio presente.",
           "price": "desde $2.50"
         }
       ]
@@ -152,7 +152,7 @@
       "cta": "Solicita una cotización al mayor",
       "chips": [
         {
-          "title": "Imanes QR para Restaurantes",
+          "title": "Imanes para Restaurantes",
           "sub": "Menús y reseñas, en el refrigerador"
         },
         {
@@ -218,7 +218,7 @@
         },
         {
           "q": "¿Hacen pedidos para empresas o eventos?",
-          "a": "Sí — desde menús con QR y tarjetas de presentación hasta recuerdos de boda y recaudaciones escolares. Elige el Set al por mayor de 50 Gemas o solicita una cotización personalizada para pedidos más grandes."
+          "a": "Sí — desde tarjetas de presentación hasta recuerdos de boda y recaudaciones escolares. Elige el Set al por mayor de 50 Gemas o solicita una cotización personalizada para pedidos más grandes."
         },
         {
           "q": "¿Cuánto tarda la producción?",
@@ -265,8 +265,6 @@
     "summaryProductionValue": "7 días hábiles",
     "summaryPackaging": "Empaque",
     "summaryPackagingValue": "Bolsa Gather de la firma",
-    "summaryNfc": "NFC + QR",
-    "summaryNfcValue": "Incluido en cada pieza",
     "summaryShellsSuffix": "imanes Shell",
     "paymentAcceptedLabel": "Pagos aceptados:",
     "paymentAcceptedNote": "Sin pago por ahora — te enviamos un enlace seguro a tu correo después de confirmar tu pedido.",
@@ -309,7 +307,7 @@
     "yourOrder": "◆ Tu pedido",
     "product": "Producto",
     "quantitySets": "Cantidad (sets)",
-    "shippingNote": "Envío gratis en EE. UU. · Producción en 7 días · NFC + QR incluido · Bolsa de regalo incluida",
+    "shippingNote": "Envío gratis en EE. UU. · Producción en 7 días · Bolsa de regalo incluida",
     "yourInformation": "◆ Tu información",
     "fullNameLabel": "Nombre completo",
     "emailLabel": "Correo electrónico",
@@ -385,7 +383,7 @@
     "whyEyebrow": "Por qué empezamos",
     "whyTitle": "Un recuerdo que puedes sostener — y tocar",
     "p1": "Comenzamos Memoir Gems en Texas con una pregunta que no dejábamos de hacernos: ¿y si un imán de fotos pudiera hacer algo más que colgar en el refrigerador? ¿Y si pudiera abrir todo un mundo de recuerdos con un solo toque?",
-    "p2": "El Shell fue nuestra respuesta. Un imán de fotos rígido, impreso en UV, con un chip NFC integrado y un código QR dinámico — para que la foto del frente lleve a algo significativo en la parte de atrás. Un video de la boda. Un álbum compartido. Un memorial virtual. Un menú de restaurante que se actualiza sin reimprimir.",
+    "p2": "El Shell fue nuestra respuesta. Un imán de fotos rígido, impreso en UV, que mantiene su color y forma por años — hecho para verse, tocarse y exhibirse todos los días.",
     "p3": "Cada Shell se envía listo para regalar en nuestra Bolsa Gather de la firma — papel de seda, cinta satinada en bronce, y un recuerdo que de verdad hace más que cualquier imán anterior.",
     "p4": "Estamos en Texas y enviamos a todo Estados Unidos. Cada set se hace un pedido a la vez, con tus fotos, tus momentos, tu historia.",
     "valuesEyebrow": "Lo que defendemos",
@@ -397,8 +395,8 @@
       },
       {
         "icon": "◎",
-        "title": "Tecnología con sentido",
-        "desc": "NFC + QR no es un truco. Es un puente entre lo físico y lo digital — la foto y la historia detrás de ella."
+        "title": "Hecho para durar",
+        "desc": "Impresión UV de calidad de archivo sobre una base rígida — sin desteñirse, sin doblarse, sin imanes frágiles que se deterioran."
       },
       {
         "icon": "✦",
@@ -485,27 +483,6 @@
         ]
       },
       {
-        "category": "Tecnología NFC y QR",
-        "items": [
-          {
-            "q": "¿Cómo funciona el chip NFC?",
-            "a": "Acerca cualquier teléfono compatible con NFC a una pulgada del Shell y abrirá automáticamente la URL que asignaste. No se necesita ninguna app — solo toca y se abre en tu navegador."
-          },
-          {
-            "q": "¿Qué teléfonos son compatibles con NFC?",
-            "a": "Todos los modelos de iPhone desde el iPhone 7. La mayoría de los teléfonos Android desde 2015. Si tu teléfono no es compatible con NFC, el código QR en la parte de atrás de cada Shell funciona para todos."
-          },
-          {
-            "q": "¿Puedo cambiar el enlace NFC después de recibir mis imanes?",
-            "a": "Sí, en cualquier momento. Inicia sesión en memoirgems.com, ve a Mis Shells y actualiza el enlace. Los cambios son instantáneos — no se necesita reimprimir."
-          },
-          {
-            "q": "¿A qué puedo enlazar mi Shell?",
-            "a": "Cualquier URL que funcione en un navegador: álbumes de Google Photos, álbumes compartidos de iCloud, videos de YouTube, Vimeo, carpetas de Google Drive, páginas memoriales, menús de restaurante, sitios de boda, y más."
-          }
-        ]
-      },
-      {
         "category": "Envíos y empaque",
         "items": [
           {
@@ -535,10 +512,174 @@
           },
           {
             "q": "¿Los imanes son seguros para niños?",
-            "a": "Los imanes Shell contienen chips NFC integrados e imanes de neodimio. No son adecuados para niños menores de 3 años. Mantener alejados de marcapasos y tarjetas de crédito."
+            "a": "Los imanes Shell contienen imanes de neodimio resistentes. No son adecuados para niños menores de 3 años. Mantener alejados de marcapasos y tarjetas de crédito."
           }
         ]
       }
     ]
+  },
+  "Events": {
+    "eyebrow": "Eventos y ocasiones",
+    "title": "Shells para cada momento especial",
+    "sub": "De bodas a memoriales — Memoir Gems convierte cualquier ocasión en un recuerdo duradero.",
+    "types": [
+      {
+        "icon": "💍",
+        "title": "Bodas",
+        "desc": "Imanes Shell como detalles para invitados, porta tarjetas de asiento, o un regalo especial para los novios. Cada Shell enlaza a tu galería de boda para que los invitados revivan el día.",
+        "popular": "Paquete de Boda — $89"
+      },
+      {
+        "icon": "👶",
+        "title": "Baby Showers y nacimientos",
+        "desc": "Anuncia la llegada con un set de imanes Shell. Familia y amigos reciben un recuerdo — toca para ver el primer álbum del recién nacido.",
+        "popular": "Set Clásico 2×2 — $48"
+      },
+      {
+        "icon": "🎓",
+        "title": "Graduaciones",
+        "desc": "Celebra el logro. Imanes Shell con fotos de graduación, cada uno enlazado a un libro de recuerdos digital o video homenaje.",
+        "popular": "Set Retrato 2×3 — $52"
+      },
+      {
+        "icon": "🎂",
+        "title": "Cumpleaños especiales",
+        "desc": "El regalo perfecto para los 40, 50, 60 años. Un set curado de fotos enlazado a un mensaje de video de amigos y familia.",
+        "popular": "Set Historia 2.5×3.5 — $64"
+      },
+      {
+        "icon": "🕊️",
+        "title": "Memoriales y homenajes",
+        "desc": "Honra una vida bien vivida. Sets conmemorativos con fotos retrato, cada uno enlazando a una página de homenaje digital que la familia puede ver para siempre.",
+        "popular": "Set Grande 3×3 — $74"
+      },
+      {
+        "icon": "🥂",
+        "title": "Eventos corporativos",
+        "desc": "Imanes Shell de marca para eventos de equipo, regalos a clientes y lanzamientos de producto. Enlaza a tu página de marca, campaña o galería del equipo.",
+        "popular": "Programas B2B disponibles"
+      }
+    ],
+    "bulkEyebrow": "Pedidos de eventos y al mayor",
+    "bulkTitle": "¿Planeando un evento grande?",
+    "bulkDesc": "Trabajamos con organizadores de eventos, coordinadores de boda y equipos corporativos en pedidos al mayor de Shells. Empaque personalizado, producción prioritaria y coordinación dedicada disponible para pedidos de 10+ sets. Contáctanos para hablar de tu evento.",
+    "getEventQuote": "Cotizar para mi evento →",
+    "b2bPrograms": "Programas B2B",
+    "ctaTitle": "Crea tus Shells para el evento",
+    "startCustomizing": "Comenzar a personalizar →"
+  },
+  "HowItWorks": {
+    "eyebrow": "El proceso",
+    "title": "Cómo funciona Memoir Gems",
+    "sub": "De la foto al Shell listo para regalar en 7 días. Esto es exactamente lo que sucede.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Elige el tamaño de tu Shell",
+        "desc": "Elige entre cinco tamaños de Shell — desde el Clásico 2×2 de bolsillo hasta el Grande 3×3. Cada tamaño viene como un set de imanes rígidos impresos en UV."
+      },
+      {
+        "num": "02",
+        "title": "Envíanos tus fotos",
+        "desc": "Después de tu pedido, recibirás un enlace seguro para subir fotos. Envíanos tus fotos favoritas — las originales de tu teléfono o cámara funcionan mejor. Revisamos cada foto antes de imprimir."
+      },
+      {
+        "num": "03",
+        "title": "Imprimimos e integramos",
+        "desc": "Tus fotos se imprimen en UV directamente sobre imanes Shell rígidos usando tintas de archivo de calidad museo, resistentes a desteñirse por años."
+      },
+      {
+        "num": "04",
+        "title": "Entrega lista para regalar",
+        "desc": "Cada set llega en nuestra Bolsa Gather de la firma con papel de seda y cinta satinada en bronce. No necesitas envolverlo — está listo para regalar desde que llega."
+      }
+    ],
+    "faqTitle": "Preguntas comunes",
+    "faqs": [
+      {
+        "q": "¿Cuánto tarda la producción?",
+        "a": "7 días hábiles desde que recibimos tus fotos. Hay pedidos urgentes disponibles — contáctanos."
+      },
+      {
+        "q": "¿Qué pasa si mis fotos son de baja resolución?",
+        "a": "Te avisaremos sobre cualquier foto que pueda no imprimir bien y pediremos reemplazos de mayor resolución antes de iniciar la producción."
+      },
+      {
+        "q": "¿Los imanes funcionan en todas las superficies?",
+        "a": "Los imanes Shell funcionan en cualquier superficie ferromagnética — refrigeradores, archivadores metálicos, pizarras blancas y paneles de exhibición."
+      },
+      {
+        "q": "¿Qué es la Bolsa Gather?",
+        "a": "Nuestro empaque distintivo — una bolsa premium con textura de lino, papel de seda y cinta en bronce. Tu set se envía dentro de ella, lista para regalar."
+      }
+    ],
+    "ctaTitle": "¿Listo para crear tu set?",
+    "startCustomizing": "Comenzar a personalizar →",
+    "browseProducts": "Ver productos"
+  },
+  "B2b": {
+    "eyebrow": "Programas B2B",
+    "title": "Memoir Gems para empresas",
+    "sub": "Imanes Shell de marca premium para restaurantes, agentes inmobiliarios, fotógrafos, hoteles y equipos corporativos. Precios por volumen y soporte dedicado.",
+    "whoWeWorkWith": "Con quién trabajamos",
+    "programs": [
+      {
+        "icon": "🍽️",
+        "title": "Imanes para restaurantes y cafés",
+        "desc": "Reemplaza los menús estáticos con imanes Shell. Toca para ver los especiales del día, el menú completo o el enlace de reservas. Actualiza la URL al instante — sin reimprimir."
+      },
+      {
+        "icon": "🏠",
+        "title": "Regalos de cierre inmobiliario",
+        "desc": "Regala a tus clientes un set de imanes Shell con su nuevo hogar. Cada Shell enlaza a un recorrido en video o un mensaje de bienvenida personalizado."
+      },
+      {
+        "icon": "🏨",
+        "title": "Hoteles y hospitalidad",
+        "desc": "Imanes Shell personalizados en habitaciones y suites que enlazan a servicios del hotel, guías locales o páginas de concierge. Un toque de marca premium."
+      },
+      {
+        "icon": "💍",
+        "title": "Organizadores de bodas",
+        "desc": "Ofrece imanes Shell como un complemento premium para tus parejas — detalles para invitados, tarjetas de asiento o un recuerdo especial para los novios."
+      },
+      {
+        "icon": "📷",
+        "title": "Fotógrafos",
+        "desc": "Ofrece paquetes de imanes Shell a cada cliente. Nosotros nos encargamos de la impresión y producción — tú entregas un producto físico premium con tu galería integrada."
+      },
+      {
+        "icon": "🏢",
+        "title": "Empresas y equipos",
+        "desc": "Reconocimiento de empleados, regalos a clientes, lanzamientos de producto, ferias comerciales. Sets Shell personalizados con tu fotografía de marca y enlaces."
+      }
+    ],
+    "volumePricing": "Precios por volumen",
+    "tiers": [
+      {
+        "name": "Partner",
+        "min": "5 sets/mes",
+        "discount": "10% de descuento",
+        "perks": "Producción prioritaria, gerente de cuenta"
+      },
+      {
+        "name": "Studio",
+        "min": "15 sets/mes",
+        "discount": "18% de descuento",
+        "perks": "Opción de empaque personalizado, facturación net-30"
+      },
+      {
+        "name": "Enterprise",
+        "min": "30+ sets/mes",
+        "discount": "Personalizado",
+        "perks": "Opción de marca blanca, equipo de cuenta dedicado"
+      }
+    ],
+    "fromPrefix": "Desde",
+    "tiersNote": "Todos los niveles incluyen empaque Bolsa Gather en cada set.",
+    "ctaTitle": "Construyamos tu programa B2B",
+    "ctaSub": "Cuéntanos sobre tu negocio y armaremos una propuesta personalizada en 24 horas.",
+    "requestProposal": "Solicitar propuesta B2B →",
+    "browseProducts": "Ver productos"
   }
 }

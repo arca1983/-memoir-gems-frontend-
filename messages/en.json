@@ -1,6 +1,6 @@
 {
   "Nav": {
-    "announcement": "♦ Free U.S. shipping on every set  ·  Ships in 7 days  ·  NFC + QR on all Shell sizes ♦",
+    "announcement": "♦ Free U.S. shipping on every set  ·  Ships in 7 days  ·  Handcrafted with love ♦",
     "tagline": "Treasure Your Story",
     "products": "Products",
     "customize": "Customize",
@@ -13,7 +13,7 @@
   },
   "Footer": {
     "tagline": "Treasure Your Story",
-    "blurb": "Custom photo magnets embedded with NFC & QR technology. Crafted with care. Delivered gift-ready.",
+    "blurb": "Custom photo magnets, crafted with care. Delivered gift-ready.",
     "shopHeading": "Shop",
     "shopAll": "All Products",
     "shopPuzzle": "Puzzle Shell Set",
@@ -111,7 +111,7 @@
         },
         {
           "title": "Business Gems",
-          "desc": "QR codes, logos, and promos — keepsakes that keep your brand close.",
+          "desc": "Logos, promos, and branding — keepsakes that keep your business close.",
           "price": "from $2.50"
         }
       ]
@@ -152,7 +152,7 @@
       "cta": "Request a bulk quote",
       "chips": [
         {
-          "title": "Restaurant QR Magnets",
+          "title": "Restaurant Magnets",
           "sub": "Menus & reviews, on the fridge"
         },
         {
@@ -218,7 +218,7 @@
         },
         {
           "q": "Do you make business or event orders?",
-          "a": "Yes — from QR menus and business cards to wedding favors and school fundraisers. Choose the 50-Gem Bulk Set or request a custom quote for larger runs."
+          "a": "Yes — from business cards to wedding favors and school fundraisers. Choose the 50-Gem Bulk Set or request a custom quote for larger runs."
         },
         {
           "q": "How long does production take?",
@@ -265,8 +265,6 @@
     "summaryProductionValue": "7 business days",
     "summaryPackaging": "Packaging",
     "summaryPackagingValue": "Signature Gather Pouch",
-    "summaryNfc": "NFC + QR",
-    "summaryNfcValue": "Included on every piece",
     "summaryShellsSuffix": "Shell magnets",
     "paymentAcceptedLabel": "Payment accepted:",
     "paymentAcceptedNote": "No payment now — we send a secure link to your email after confirming your order.",
@@ -309,7 +307,7 @@
     "yourOrder": "◆ Your Order",
     "product": "Product",
     "quantitySets": "Quantity (sets)",
-    "shippingNote": "Free U.S. shipping · 7-day production · NFC + QR included · Gift Pouch included",
+    "shippingNote": "Free U.S. shipping · 7-day production · Gift Pouch included",
     "yourInformation": "◆ Your Information",
     "fullNameLabel": "Full Name",
     "emailLabel": "Email Address",
@@ -385,7 +383,7 @@
     "whyEyebrow": "Why We Started",
     "whyTitle": "A Memory You Can Hold — and Tap",
     "p1": "We started Memoir Gems in Texas with a question we couldn't stop asking: what if a photo magnet could do more than just hang on a fridge? What if it could open a whole world of memory with a single tap?",
-    "p2": "The Shell was our answer. A rigid, UV-printed photo magnet with an embedded NFC chip and dynamic QR code — so the photo on the front leads somewhere meaningful on the back. A video of the wedding. A shared album. A virtual memorial. A restaurant menu that updates without reprinting.",
+    "p2": "The Shell was our answer. A rigid, UV-printed photo magnet that holds its color and shape for years — built to be seen, touched, and kept on display every day.",
     "p3": "Every Shell ships gift-ready in our signature Gather Pouch — tissue paper, bronze satin ribbon, and a keepsake that truly does more than any magnet before it.",
     "p4": "We're based in Texas and ship across the U.S. Every set is made one order at a time, with your photos, your moments, your story.",
     "valuesEyebrow": "What We Stand For",
@@ -397,8 +395,8 @@
       },
       {
         "icon": "◎",
-        "title": "Technology That Adds Meaning",
-        "desc": "NFC + QR isn't a gimmick. It's a bridge between the physical and digital — the photo and the story behind it."
+        "title": "Built to Last",
+        "desc": "Archival-quality UV printing on a rigid base — no fading, no bending, no flimsy magnets that fall apart."
       },
       {
         "icon": "✦",
@@ -485,27 +483,6 @@
         ]
       },
       {
-        "category": "NFC & QR Technology",
-        "items": [
-          {
-            "q": "How does the NFC chip work?",
-            "a": "Hold any NFC-enabled smartphone within an inch of the Shell and it will automatically open the URL you've assigned. No app required — just tap and it opens in your browser."
-          },
-          {
-            "q": "What phones are compatible with NFC?",
-            "a": "All iPhone models from iPhone 7 and newer. Most Android phones from 2015 onward. If your phone doesn't support NFC, the QR code on the back of each Shell works for everyone."
-          },
-          {
-            "q": "Can I change the NFC link after receiving my magnets?",
-            "a": "Yes, any time. Log in at memoirgems.com, go to My Shells, and update the link. Changes are instant — no reprinting needed."
-          },
-          {
-            "q": "What can I link my Shell to?",
-            "a": "Any URL that works in a browser: Google Photos albums, iCloud shared albums, YouTube videos, Vimeo, Google Drive folders, memorial pages, restaurant menus, wedding websites, and more."
-          }
-        ]
-      },
-      {
         "category": "Shipping & Packaging",
         "items": [
           {
@@ -535,10 +512,174 @@
           },
           {
             "q": "Are the magnets safe for kids?",
-            "a": "Shell magnets contain embedded NFC chips and neodymium magnets. They are not suitable for children under 3. Keep away from pacemakers and credit cards."
+            "a": "Shell magnets contain strong neodymium magnets. They are not suitable for children under 3. Keep away from pacemakers and credit cards."
           }
         ]
       }
     ]
+  },
+  "Events": {
+    "eyebrow": "Events & Occasions",
+    "title": "Shells for Every Milestone",
+    "sub": "From weddings to memorials — Memoir Gems transforms any occasion into a lasting keepsake.",
+    "types": [
+      {
+        "icon": "💍",
+        "title": "Weddings",
+        "desc": "Shell magnets as guest favors, escort card holders, or a signature gift for the couple. Each Shell links to your wedding gallery so guests can relive the day.",
+        "popular": "Wedding Story Pack — $89"
+      },
+      {
+        "icon": "👶",
+        "title": "Baby Showers & Births",
+        "desc": "Announce the arrival with a set of Shell magnets. Family and friends get a keepsake — tap to see the newborn's first album.",
+        "popular": "Classic 2×2 Set — $48"
+      },
+      {
+        "icon": "🎓",
+        "title": "Graduations",
+        "desc": "Celebrate the milestone. Shell magnets featuring graduation portraits, each linked to a digital memory book or video tribute.",
+        "popular": "Portrait 2×3 Set — $52"
+      },
+      {
+        "icon": "🎂",
+        "title": "Milestone Birthdays",
+        "desc": "The perfect gift for 40th, 50th, 60th birthdays. A curated set of memory photos linked to a video message from friends and family.",
+        "popular": "Story 2.5×3.5 Set — $64"
+      },
+      {
+        "icon": "🕊️",
+        "title": "Memorials & Tributes",
+        "desc": "Honor a life well lived. Memorial Shell sets with portrait photos, each linking to a digital tribute page family can access forever.",
+        "popular": "Grand 3×3 Set — $74"
+      },
+      {
+        "icon": "🥂",
+        "title": "Corporate Events",
+        "desc": "Branded Shell magnets for team events, client gifts, and product launches. Link to your brand page, campaign, or team gallery.",
+        "popular": "B2B Programs available"
+      }
+    ],
+    "bulkEyebrow": "Event & Bulk Orders",
+    "bulkTitle": "Planning a Large Event?",
+    "bulkDesc": "We work with event planners, wedding coordinators, and corporate teams on bulk Shell orders. Custom packaging, priority production, and dedicated coordination available for orders of 10+ sets. Contact us to discuss your event.",
+    "getEventQuote": "Get Event Quote →",
+    "b2bPrograms": "B2B Programs",
+    "ctaTitle": "Create Your Event Shells",
+    "startCustomizing": "Start Customizing →"
+  },
+  "HowItWorks": {
+    "eyebrow": "The Process",
+    "title": "How Memoir Gems Works",
+    "sub": "From photo to gift-ready Shell in 7 days. Here's exactly what happens.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Choose Your Shell Size",
+        "desc": "Pick from five Shell sizes — from the pocket-sized 2×2 Classic to the bold 3×3 Grand. Each size comes as a set of rigid, UV-printed magnets."
+      },
+      {
+        "num": "02",
+        "title": "Send Us Your Photos",
+        "desc": "After your order, you'll receive a secure upload link. Send us your favorite photos — originals from your phone or camera work best. We review every photo before printing."
+      },
+      {
+        "num": "03",
+        "title": "We Print & Embed",
+        "desc": "Your photos are UV-printed directly onto rigid Shell magnets using museum-quality archival inks built to resist fading for years."
+      },
+      {
+        "num": "04",
+        "title": "Delivered Gift-Ready",
+        "desc": "Every set arrives in our signature Gather Pouch with tissue paper and bronze satin ribbon. No gift wrapping needed — it's ready to give the moment it arrives."
+      }
+    ],
+    "faqTitle": "Common Questions",
+    "faqs": [
+      {
+        "q": "How long does production take?",
+        "a": "7 business days from the time we receive your photos. Rush orders available — contact us."
+      },
+      {
+        "q": "What if my photos are low resolution?",
+        "a": "We'll flag any photos that may not print well and ask for higher-resolution replacements before starting production."
+      },
+      {
+        "q": "Do the magnets work on all surfaces?",
+        "a": "Shell magnets work on any ferromagnetic surface — refrigerators, metal filing cabinets, whiteboards, and display panels."
+      },
+      {
+        "q": "What is the Gather Pouch?",
+        "a": "Our signature packaging — a premium linen-feel pouch with tissue paper and bronze ribbon. Your set ships inside it, gift-ready."
+      }
+    ],
+    "ctaTitle": "Ready to Create Your Set?",
+    "startCustomizing": "Start Customizing →",
+    "browseProducts": "Browse Products"
+  },
+  "B2b": {
+    "eyebrow": "B2B Programs",
+    "title": "Memoir Gems for Business",
+    "sub": "Premium branded Shell magnets for restaurants, realtors, photographers, hotels, and corporate teams. Volume pricing and dedicated support.",
+    "whoWeWorkWith": "Who We Work With",
+    "programs": [
+      {
+        "icon": "🍽️",
+        "title": "Restaurant & Café Magnets",
+        "desc": "Replace static menu cards with Shell magnets. Tap to see today's specials, full menu, or reservation link. Update the URL instantly — no reprinting."
+      },
+      {
+        "icon": "🏠",
+        "title": "Real Estate Closing Gifts",
+        "desc": "Give clients a Shell magnet set featuring their new home. Each Shell links to a video walkthrough or a personalized welcome message."
+      },
+      {
+        "icon": "🏨",
+        "title": "Hotel & Hospitality",
+        "desc": "Custom Shell magnets in rooms and suites that link to hotel services, local guides, or concierge pages. A premium branded touch."
+      },
+      {
+        "icon": "💍",
+        "title": "Wedding Planners",
+        "desc": "Offer Shell magnets as a premium add-on for your couples — guest favors, seating cards, or a signature keepsake for the couple."
+      },
+      {
+        "icon": "📷",
+        "title": "Photographers",
+        "desc": "Upsell Shell magnet packages to every client. We handle printing and production — you deliver a premium physical product with your gallery built in."
+      },
+      {
+        "icon": "🏢",
+        "title": "Corporate & Team",
+        "desc": "Employee recognition, client gifts, product launches, trade shows. Custom Shell sets with your brand photography and links."
+      }
+    ],
+    "volumePricing": "Volume Pricing",
+    "tiers": [
+      {
+        "name": "Partner",
+        "min": "5 sets/mo",
+        "discount": "10% off",
+        "perks": "Priority production, account manager"
+      },
+      {
+        "name": "Studio",
+        "min": "15 sets/mo",
+        "discount": "18% off",
+        "perks": "Custom packaging option, net-30 billing"
+      },
+      {
+        "name": "Enterprise",
+        "min": "30+ sets/mo",
+        "discount": "Custom",
+        "perks": "White-label option, dedicated account team"
+      }
+    ],
+    "fromPrefix": "From",
+    "tiersNote": "All tiers include Gather Pouch packaging on every set.",
+    "ctaTitle": "Let's Build Your B2B Program",
+    "ctaSub": "Tell us about your business and we'll put together a custom proposal within 24 hours.",
+    "requestProposal": "Request B2B Proposal →",
+    "browseProducts": "Browse Products"
   }
 }
