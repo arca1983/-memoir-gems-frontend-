@@ -681,5 +681,158 @@
     "ctaSub": "Tell us about your business and we'll put together a custom proposal within 24 hours.",
     "requestProposal": "Request B2B Proposal →",
     "browseProducts": "Browse Products"
+  },
+  "Privacy": {
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: June 2026 · Memoir Gems LLC",
+    "intro": "Your privacy matters to us. We collect only what we need to fulfill your order and serve you well — and we never sell your data.",
+    "contactUs": "Contact Us",
+    "termsLink": "Terms & Conditions",
+    "sections": [
+      {
+        "num": "1",
+        "title": "Information We Collect",
+        "body": "When you place an order or contact us, we collect:\n• Your name and email address\n• Shipping address\n• Photos you upload for your order\n• Payment information (processed securely by our payment provider — we never store card numbers)\n• Messages and communications you send us\n\nWe also collect standard technical data when you visit our site (IP address, browser type, pages visited) through our hosting provider."
+      },
+      {
+        "num": "2",
+        "title": "How We Use Your Information",
+        "body": "We use your information solely to:\n• Process and fulfill your order\n• Send you order status updates and tracking information\n• Respond to your questions and support requests\n• Send our newsletter, if you opt in (you can unsubscribe any time)\n• Improve our website and services\n\nWe do not sell, rent, or share your personal data with third parties for marketing purposes."
+      },
+      {
+        "num": "3",
+        "title": "Your Photos",
+        "body": "Photos you submit are used exclusively to print your order. We store them only as long as needed to complete production and verify your order quality.\n\nWe will never use your photos for marketing, advertising, or any purpose other than fulfilling your order without your explicit written consent."
+      },
+      {
+        "num": "4",
+        "title": "Payment Security",
+        "body": "All payments are processed through our secure payment providers (PayPal, Stripe). We do not store credit card numbers or financial account information on our servers. Payment data is encrypted and handled entirely by our payment processors."
+      },
+      {
+        "num": "5",
+        "title": "Cookies",
+        "body": "Our website uses essential cookies to function (session, preferences). We do not use tracking cookies for advertising. You can disable cookies in your browser settings, though some site features may not work properly."
+      },
+      {
+        "num": "6",
+        "title": "Your Rights",
+        "body": "You have the right to:\n• Request a copy of the personal data we hold about you\n• Request correction of inaccurate data\n• Request deletion of your data (subject to legal obligations)\n• Unsubscribe from our newsletter at any time\n\nTo exercise any of these rights, email contact@memoirgems.com."
+      },
+      {
+        "num": "7",
+        "title": "Data Retention",
+        "body": "We retain order information for 3 years for accounting and legal purposes. Newsletter subscription data is retained until you unsubscribe. Contact message data is retained for 1 year."
+      },
+      {
+        "num": "8",
+        "title": "Contact",
+        "body": "For any privacy questions or requests:\n\nMemoir Gems LLC\ncontact@memoirgems.com\nmemoirgems.com\n\nLast Updated: June 2026"
+      }
+    ]
+  },
+  "ShippingReturns": {
+    "eyebrow": "Policies",
+    "title": "Shipping & Returns Policy",
+    "lastUpdated": "Last Updated: June 2026 · Memoir Gems LLC",
+    "contactUs": "Contact Us",
+    "viewFaq": "View FAQ",
+    "sections": [
+      {
+        "num": "1",
+        "title": "Order Processing",
+        "body": "All Memoir Gems Shell sets are custom-produced with your photos. Production begins after we receive and approve your photo upload, which happens via a secure link sent to your email after checkout.\n\nStandard production time is 7 business days from photo approval. Rush 3-day production may be available for select sizes — contact us before ordering at contact@memoirgems.com to confirm availability.\n\nYou will receive an email notification at each stage: order confirmed, photos received, production started, and shipped."
+      },
+      {
+        "num": "2",
+        "title": "Shipping",
+        "body": "Standard shipping within the United States is free on all orders.\n\nEstimated U.S. transit times after production:\n• Continental U.S.: 2–5 business days (USPS Priority)\n• Alaska & Hawaii: 5–7 business days\n• International: Contact us for a shipping quote before ordering\n\nA tracking number will be emailed once your order ships. Memoir Gems ships from Texas, USA.\n\nIf you need to update your shipping address, contact us at contact@memoirgems.com within 24 hours of placing your order. Once an order enters production, the shipping address cannot be changed."
+      },
+      {
+        "num": "3",
+        "title": "Gift Shipping",
+        "body": "All Memoir Gems orders ship in our signature Gather Pouch with tissue paper and bronze satin ribbon — gift-ready from the moment it arrives. You may enter a recipient's address directly at checkout. Add a personal note in the order notes field and we will include it on a handwritten card."
+      },
+      {
+        "num": "4",
+        "title": "Photo Quality",
+        "body": "We review every photo before printing. If we determine a photo may not print at acceptable quality (low resolution, heavy compression, or too dark), we will contact you within 24 hours of photo upload and request a replacement.\n\nWe will not proceed to production without your approval. Photos that cannot be improved will be flagged, and we will offer a full credit or refund for any items we are unable to produce."
+      },
+      {
+        "num": "5",
+        "title": "Returns & Refunds",
+        "body": "Because every Memoir Gems Shell set is custom-produced with your photos, we do not accept returns for change of mind.\n\nHowever, we stand fully behind our print quality. If your Shells arrive:\n• Damaged in transit\n• With print defects (color bands, blurring, misalignment)\n• Missing from your order\n\nContact us within 5 business days of delivery at contact@memoirgems.com with a photo of the issue. We will reprint and reship at no cost to you, or issue a full refund — your choice.\n\nRefunds are processed to the original payment method within 5–10 business days."
+      },
+      {
+        "num": "6",
+        "title": "Order Changes & Cancellations",
+        "body": "Changes and cancellations are accepted within 24 hours of placing your order, before photos are uploaded and approved. After production begins, orders cannot be modified or cancelled.\n\nTo request a change, email contact@memoirgems.com with your order number."
+      },
+      {
+        "num": "7",
+        "title": "Contact",
+        "body": "For any shipping or return questions, reach us at:\n\nEmail: contact@memoirgems.com\nWebsite: memoirgems.com/contact\nHours: Monday–Friday, 9am–6pm CST\n\nWe respond within a few hours during business hours."
+      }
+    ]
+  },
+  "Terms": {
+    "eyebrow": "Legal",
+    "title": "Terms & Conditions",
+    "lastUpdated": "Last Updated: June 2026 · Memoir Gems LLC · memoirgems.com",
+    "contactUs": "Contact Us",
+    "shippingLink": "Shipping & Returns",
+    "sections": [
+      {
+        "num": "1",
+        "title": "Acceptance of Terms",
+        "body": "By accessing memoirgems.com or placing an order, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use our site or services.\n\nThese terms apply to all visitors, customers, and users of Memoir Gems LLC (\"Memoir Gems,\" \"we,\" \"our,\" or \"us\")."
+      },
+      {
+        "num": "2",
+        "title": "Products & Custom Orders",
+        "body": "Memoir Gems produces custom photo Shell magnets. Each set is made to order using photos you provide.\n\nBy placing an order, you confirm:\n• You own the rights to all photos you submit, or have permission to use them for this purpose\n• You are not submitting copyrighted images belonging to third parties without authorization\n• You understand that custom orders cannot be returned for change of mind once production begins\n\nWe reserve the right to refuse any order containing images that are offensive, illegal, or that violate third-party rights."
+      },
+      {
+        "num": "3",
+        "title": "Photo Submission",
+        "body": "After checkout, you will receive a secure upload link by email. You are responsible for submitting your photos within 7 days of receiving this link. Orders not completed within 30 days of purchase may be subject to cancellation.\n\nWe review all photos before printing. If a photo does not meet our minimum quality standards, we will contact you to request a replacement. We will not begin production without your confirmation."
+      },
+      {
+        "num": "4",
+        "title": "Pricing & Payment",
+        "body": "All prices are listed in U.S. dollars. Memoir Gems reserves the right to change prices at any time without notice. Prices at the time of your order are final.\n\nPayment is processed securely through our payment provider at checkout. Memoir Gems does not store your payment card information.\n\nSales tax may be applied based on your location and applicable law."
+      },
+      {
+        "num": "5",
+        "title": "Intellectual Property",
+        "body": "All content on memoirgems.com — including the Memoir Gems name, logo, product photography, copy, and design — is the property of Memoir Gems LLC and protected by applicable copyright and trademark law.\n\nYou may not reproduce, distribute, or use any content from this website without prior written permission.\n\nBy submitting photos to us, you grant Memoir Gems a limited license to use those photos solely for the purpose of producing your order. We will not use your photos for any other purpose, including marketing, without your explicit written consent."
+      },
+      {
+        "num": "6",
+        "title": "Limitation of Liability",
+        "body": "To the maximum extent permitted by law, Memoir Gems LLC shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of our products or website.\n\nOur liability for any direct damages shall not exceed the purchase price of the specific order giving rise to the claim.\n\nWe do not warrant that our website will be uninterrupted or error-free. We reserve the right to suspend or discontinue any part of our service at any time."
+      },
+      {
+        "num": "7",
+        "title": "Privacy",
+        "body": "We collect and use your personal information (name, email, shipping address, photos) only to fulfill your order and communicate with you about it. We do not sell or share your personal data with third parties for marketing purposes.\n\nPhotos submitted for production are stored only as long as needed to complete and verify your order.\n\nFor questions about your data, contact contact@memoirgems.com."
+      },
+      {
+        "num": "8",
+        "title": "Governing Law",
+        "body": "These Terms and Conditions are governed by the laws of the State of Texas, United States. Any disputes shall be resolved in the courts of Texas.\n\nIf any provision of these terms is found to be unenforceable, the remaining provisions continue in full force."
+      },
+      {
+        "num": "9",
+        "title": "Changes to These Terms",
+        "body": "We may update these Terms and Conditions at any time. Changes take effect when posted to this page. Continued use of memoirgems.com after changes are posted constitutes acceptance of the updated terms.\n\nLast updated: June 2026"
+      },
+      {
+        "num": "10",
+        "title": "Contact",
+        "body": "Memoir Gems LLC\ncontact@memoirgems.com\nmemoirgems.com"
+      }
+    ]
   }
 }
