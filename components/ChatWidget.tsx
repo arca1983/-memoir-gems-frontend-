@@ -7,15 +7,11 @@ type Message = { role: "user" | "assistant"; content: string };
 const FAQ_PATTERNS: { patterns: string[]; answer: string }[] = [
   {
     patterns: ["precio", "price", "cost", "costo", "cuanto", "cuánto", "how much", "vale"],
-    answer: "Our Shell sets range from $48 to $89:\n• Classic 2×2\" — $48 (9 pieces)\n• Standard 2.5×2.5\" — $58 (9 pieces)\n• Portrait 2×3\" — $52 (6 pieces)\n• Story 2.5×3.5\" — $64 (6 pieces)\n• Grand 3×3\" — $74 (4 pieces)\n• Wedding Story Pack — $89\n• Puzzle Shell Set — $79\n\nAll include NFC + QR and free U.S. shipping!",
+    answer: "Our Shell sets range from $48 to $89:\n• Classic 2×2\" — $48 (9 pieces)\n• Standard 2.5×2.5\" — $58 (9 pieces)\n• Portrait 2×3\" — $52 (6 pieces)\n• Story 2.5×3.5\" — $64 (6 pieces)\n• Grand 3×3\" — $74 (4 pieces)\n• Wedding Story Pack — $89\n• Puzzle Shell Set — $79\n\nFree U.S. shipping on every set!",
   },
   {
     patterns: ["shipping", "envio", "envío", "ship", "deliver", "entrega", "how long", "cuanto tiempo"],
     answer: "Free U.S. shipping on all orders! Production takes 7 business days from photo approval, then 2–5 days transit. For rush orders (3-day production), contact us before ordering at contact@memoirgems.com.",
-  },
-  {
-    patterns: ["nfc", "qr", "tap", "link", "url", "how does it work", "como funciona", "cómo funciona"],
-    answer: "Every Shell has an embedded NFC chip and printed QR code on the back. Tap any NFC-enabled phone (iPhone 7+ or most Android) and it opens whatever URL you set — a photo album, video, website, anything. You can change the link anytime from your Memoir Gems account. No reprinting needed!",
   },
   {
     patterns: ["return", "refund", "devolucion", "devolución", "reembolso", "money back"],
@@ -27,7 +23,7 @@ const FAQ_PATTERNS: { patterns: string[]; answer: string }[] = [
   },
   {
     patterns: ["puzzle", "rompecabezas", "mosaic", "mosaico"],
-    answer: "Our Puzzle Shell Set ($79) splits one photo across 9 Shell magnets in a 3×3 grid. When you place them together on your fridge, they form one large 6×6\" image. Each piece still has its own NFC chip so anyone can tap to see the full story!",
+    answer: "Our Puzzle Shell Set ($79) splits one photo across 9 Shell magnets in a 3×3 grid. When you place them together on your fridge, they form one large 6×6\" image. Each piece is a rigid, UV-printed magnet built to last!",
   },
   {
     patterns: ["wedding", "boda", "event", "evento", "favor", "gift", "regalo", "occasion"],
@@ -47,7 +43,7 @@ const FAQ_PATTERNS: { patterns: string[]; answer: string }[] = [
   },
   {
     patterns: ["hola", "hello", "hi", "hey", "buenos", "good morning", "good afternoon", "buenos dias", "buenas"],
-    answer: "Hi there! 👋 I'm the Memoir Gems assistant. I can help with questions about our products, shipping, NFC technology, payments, or anything else. What can I help you with?",
+    answer: "Hi there! 👋 I'm the Memoir Gems assistant. I can help with questions about our products, shipping, payments, or anything else. What can I help you with?",
   },
   {
     patterns: ["gracias", "thank", "thanks", "perfect", "perfecto", "great", "awesome", "genial"],
@@ -70,7 +66,7 @@ export default function ChatWidget() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Hi! I'm the Memoir Gems assistant 💎 Ask me anything about our products, shipping, NFC technology, or pricing. I'm here 24/7!",
+      content: "Hi! I'm the Memoir Gems assistant 💎 Ask me anything about our products, shipping, or pricing. I'm here 24/7!",
     },
   ]);
   const [input, setInput] = useState("");
@@ -275,7 +271,7 @@ export default function ChatWidget() {
               borderTop: "1px solid var(--cream)",
             }}
           >
-            {["Pricing", "Shipping", "NFC?", "Puzzle set"].map((s) => (
+            {["Pricing", "Shipping", "Puzzle set", "B2B"].map((s) => (
               <button
                 key={s}
                 onClick={() => { setInput(s); }}
