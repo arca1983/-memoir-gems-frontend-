@@ -125,8 +125,22 @@ function FaqAccordion() {
   );
 }
 
+function useStickyMobileCta() {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    function onScroll() {
+      setShow(window.scrollY > 480);
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  return show;
+}
+
 export default function HomeRedesign() {
   const revealRef = useReveal();
+  const showStickyCta = useStickyMobileCta();
 
   return (
     <div className="mg-home" data-theme="navy" ref={revealRef}>
@@ -299,6 +313,11 @@ export default function HomeRedesign() {
             </div>
           ))}
         </div>
+        {/* Compact teaser shown on phones instead of the full 8-tile grid above —
+            keeps the section to a couple of lines instead of eight stacked cards. */}
+        <p className="b2b-mobile-teaser wrap reveal">
+          Restaurants, realtors, weddings, schools &amp; teams — bulk orders from a handful to fifty thousand pieces.
+        </p>
         <div className="b2b__cta reveal">
           <Link href="/en/b2b" className="btn btn--gold btn--lg">Request a bulk quote</Link>
         </div>
@@ -335,6 +354,12 @@ export default function HomeRedesign() {
           <Link href="/en/customize" className="btn btn--lg">Create Your Gems</Link>
         </div>
       </section>
+
+      {/* Sticky mobile CTA — phones only; appears once the visitor scrolls past the hero,
+          so they're never more than a tap away from starting an order without scrolling back up. */}
+      <div className={`mobile-sticky-cta${showStickyCta ? " show" : ""}`}>
+        <Link href="/en/customize" className="btn btn--gold btn--block">Create Your Gems</Link>
+      </div>
     </div>
   );
 }
