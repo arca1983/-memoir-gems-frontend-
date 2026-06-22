@@ -1,83 +1,45 @@
 // Dynamic product page — server-rendered on demand (no SSG = no 500 errors at build time)
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
 
-const PRODUCTS: Record<string, {
-  id: string; name: string; size: string; desc: string; longDesc: string;
-  price: number; qty: number; img: string; tag: string; features: string[];
-  isPuzzle?: boolean;
-}> = {
-  "shell-2x2": {
-    id: "shell-2x2", name: "Classic Shell — 2×2\"", size: "2×2", tag: "Best Seller",
-    desc: "Best-selling square. 9 photos per set.",
-    longDesc: "Our most popular size. Nine 2×2 Shell magnets, each printed with precision UV ink for vivid, fade-resistant color. Each Shell is built to last — vivid, fade-resistant color that stays sharp for years.",
-    price: 48, qty: 9,
-    img: "https://images.unsplash.com/photo-1529636562405-8bb4b3e9b01f?w=800&q=85",
-    features: ["9 Shell magnets per set", "2×2 inch rigid Shell", "Signature Gather Pouch included", "Free U.S. shipping"],
-  },
-  "shell-2-5x2-5": {
-    id: "shell-2-5x2-5", name: "Standard Shell — 2.5×2.5\"", size: "2.5×2.5", tag: "Popular",
-    desc: "Panoramic & group shots. 9 photos per set.",
-    longDesc: "More canvas for your most important moments. The 2.5×2.5 Shell is perfect for panoramic photos and group shots. Nine per set, each crafted with the same archival-quality printing.",
-    price: 58, qty: 9,
-    img: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=85",
-    features: ["9 Shell magnets per set", "2.5×2.5 inch rigid Shell", "Signature Gather Pouch included", "Free U.S. shipping"],
-  },
-  "shell-2x3": {
-    id: "shell-2x3", name: "Portrait Shell — 2×3\"", size: "2×3", tag: "New",
-    desc: "Weddings & memorials. 6 photos per set.",
-    longDesc: "The portrait orientation makes it ideal for wedding photos, individual portraits, and memorial collections. Six 2×3 Shells per set, delivered gift-ready.",
-    price: 52, qty: 6,
-    img: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=800&q=85",
-    features: ["6 Shell magnets per set", "2×3 inch portrait Shell", "Signature Gather Pouch included", "Free U.S. shipping"],
-  },
-  "shell-2-5x3-5": {
-    id: "shell-2-5x3-5", name: "Story Shell — 2.5×3.5\"", size: "2.5×3.5", tag: "Gift Favorite",
-    desc: "Centerpiece size. 6 photos per set.",
-    longDesc: "Our centerpiece Shell. Larger format for statement pieces — perfect for memorial collections, anniversary gifts, and special event favors. Six per set.",
-    price: 64, qty: 6,
-    img: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=85",
-    features: ["6 Shell magnets per set", "2.5×3.5 inch portrait Shell", "Signature Gather Pouch included", "Free U.S. shipping"],
-  },
-  "shell-3x3": {
-    id: "shell-3x3", name: "Grand Shell — 3×3\"", size: "3×3", tag: "Premium",
-    desc: "Maximum impact. 4 photos per set.",
-    longDesc: "The Grand Shell is our largest format — a true statement piece. Four magnets per set, each commanding attention on any surface. Premium presentation.",
-    price: 74, qty: 4,
-    img: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=800&q=85",
-    features: ["4 Shell magnets per set", "3×3 inch grand Shell", "Signature Gather Pouch included", "Free U.S. shipping"],
-  },
-  "wedding-pack": {
-    id: "wedding-pack", name: "Wedding Story Pack", size: "2.5×2.5", tag: "Collection",
-    desc: "Nine 2.5×2.5 Portrait Shells. Link to video moments.",
-    longDesc: "Our most beloved wedding gift. Nine 2.5×2.5 Shells, each linked to a different moment from the day — the ceremony, first dance, reception, toasts. Delivered in a premium Gather Pouch with tissue and bronze satin ribbon.",
-    price: 89, qty: 9,
-    img: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&q=85",
-    features: ["9 Shell magnets per set", "2.5×2.5 inch Shell", "Signature Gather Pouch + bronze ribbon", "Free U.S. shipping"],
-  },
-  "puzzle-shells": {
-    id: "puzzle-shells", name: "Puzzle Shell Set", size: "2×2", tag: "Exclusive",
-    desc: "One photo split across 9 interlocking Shell magnets. Assemble on your fridge.",
-    longDesc: "A single photo printed across nine 2×2 Shell magnets in a 3×3 grid — when you place them side by side on your fridge, they form one stunning image. Each piece is a rigid, UV-printed Shell built to hold its color and shape for years.",
-    price: 79, qty: 9,
-    img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85",
-    isPuzzle: true,
-    features: [
-      "9 Shell magnets — one image split across all 9",
-      "Assembles into a 6×6\" mosaic on any surface",
-      "Send one photo — we do the split automatically",
-      "Signature Gather Pouch included",
-      "Free U.S. shipping",
-    ],
-  },
+const PRODUCT_META: Record<string, { size: string; price: number; qty: number; img: string; isPuzzle?: boolean }> = {
+  "shell-2x2": { size: "2×2", price: 48, qty: 9, img: "https://images.unsplash.com/photo-1529636562405-8bb4b3e9b01f?w=800&q=85" },
+  "shell-2.5x2.5": { size: "2.5×2.5", price: 58, qty: 9, img: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=85" },
+  "shell-2x3": { size: "2×3", price: 52, qty: 6, img: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=800&q=85" },
+  "shell-2.5x3.5": { size: "2.5×3.5", price: 64, qty: 6, img: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=85" },
+  "shell-3x3": { size: "3×3", price: 74, qty: 4, img: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=800&q=85" },
+  "wedding-pack": { size: "2.5×2.5", price: 89, qty: 9, img: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&q=85" },
+  "puzzle-shells": { size: "2×2", price: 79, qty: 9, img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85", isPuzzle: true },
 };
 
+// URL slugs map to the same keys used in PRODUCT_META / translation catalog
+const SLUG_MAP: Record<string, string> = {
+  "shell-2x2": "shell-2x2",
+  "shell-2-5x2-5": "shell-2.5x2.5",
+  "shell-2x3": "shell-2x3",
+  "shell-2-5x3-5": "shell-2.5x3.5",
+  "shell-3x3": "shell-3x3",
+  "wedding-pack": "wedding-pack",
+  "puzzle-shells": "puzzle-shells",
+};
+
+type ProductText = { name: string; tag: string; longDesc: string; features: string[] };
 type Props = { params: { locale: string; id: string } };
 
 export default function ProductDetailPage({ params }: Props) {
-  const product = PRODUCTS[params.id];
-  if (!product) notFound();
+  const locale = useLocale();
+  const t = useTranslations("ProductDetail");
+
+  const productId = SLUG_MAP[params.id];
+  const meta = productId ? PRODUCT_META[productId] : undefined;
+  if (!productId || !meta) notFound();
+
+  const products = t.raw("products") as Record<string, ProductText>;
+  const product = products[productId];
+  const trustBadges = t.raw("trustBadges") as string[];
 
   return (
     <div style={{ background: "var(--ivory)", minHeight: "100vh" }}>
@@ -92,9 +54,9 @@ export default function ProductDetailPage({ params }: Props) {
           letterSpacing: "0.08em",
         }}
       >
-        <Link href="/en">Home</Link>
+        <Link href={`/${locale}`}>{t("breadcrumbHome")}</Link>
         {" / "}
-        <Link href="/en/products">Products</Link>
+        <Link href={`/${locale}/products`}>{t("breadcrumbProducts")}</Link>
         {" / "}
         <span style={{ color: "var(--navy)" }}>{product.name}</span>
       </div>
@@ -123,7 +85,7 @@ export default function ProductDetailPage({ params }: Props) {
             }}
           >
             <Image
-              src={product.img}
+              src={meta.img}
               alt={product.name}
               fill
               style={{ objectFit: "cover" }}
@@ -134,7 +96,7 @@ export default function ProductDetailPage({ params }: Props) {
           <div
             style={{
               display: "inline-block",
-              background: product.tag === "Exclusive" ? "var(--gold)" : "var(--navy)",
+              background: meta.isPuzzle ? "var(--gold)" : "var(--navy)",
               color: "white",
               fontSize: "0.62rem",
               fontWeight: 600,
@@ -148,7 +110,7 @@ export default function ProductDetailPage({ params }: Props) {
           </div>
 
           {/* Puzzle explainer visual */}
-          {product.isPuzzle && (
+          {meta.isPuzzle && (
             <div
               style={{
                 marginTop: "1.5rem",
@@ -185,7 +147,7 @@ export default function ProductDetailPage({ params }: Props) {
                   lineHeight: 1.5,
                 }}
               >
-                9 pieces · one image · assembles into a 6×6″ mosaic
+                {t("puzzleCaption")}
               </p>
             </div>
           )}
@@ -194,7 +156,7 @@ export default function ProductDetailPage({ params }: Props) {
         {/* Details */}
         <div>
           <div className="section-label" style={{ marginBottom: "0.8rem" }}>
-            ◆ {product.isPuzzle ? "Puzzle Set — 9 pieces, 1 photo" : `${product.size}" Shell · ${product.qty} photos per set`}
+            ◆ {meta.isPuzzle ? t("puzzleEyebrowLabel") : t("shellEyebrow", { size: meta.size, qty: meta.qty })}
           </div>
 
           <h1
@@ -219,7 +181,7 @@ export default function ProductDetailPage({ params }: Props) {
               marginBottom: "1.5rem",
             }}
           >
-            ${product.price}.00
+            ${meta.price}.00
           </div>
 
           <p
@@ -256,14 +218,14 @@ export default function ProductDetailPage({ params }: Props) {
 
           {/* CTA */}
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-            <Link href={`/en/order?product=${product.id}`}>
+            <Link href={`/${locale}/order?product=${productId}`}>
               <span className="btn-primary" style={{ fontSize: "0.8rem" }}>
-                Order Now →
+                {t("orderNow")} →
               </span>
             </Link>
-            <Link href="/en/contact">
+            <Link href={`/${locale}/contact`}>
               <span className="btn-outline" style={{ fontSize: "0.8rem" }}>
-                Ask a Question
+                {t("askQuestion")}
               </span>
             </Link>
           </div>
@@ -279,7 +241,7 @@ export default function ProductDetailPage({ params }: Props) {
               flexWrap: "wrap",
             }}
           >
-            {["Free U.S. Shipping", "7-Day Production", "Gift-Ready Packaging", "Premium UV Print"].map((b) => (
+            {trustBadges.map((b) => (
               <div
                 key={b}
                 style={{
