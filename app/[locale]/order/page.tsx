@@ -3,6 +3,7 @@ import { useState, useEffect, useRef, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Script from "next/script";
 import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 import { UploadDropzone } from "@/utils/uploadthing";
 
 type UploadedPhoto = {
@@ -20,20 +21,21 @@ function photoUrl(file: UploadedPhoto) {
 const STRIPE_PK = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "";
 const PAYPAL_CLIENT_ID = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID || "";
 
-const PRODUCTS = [
-  { id: "shell-2x2",      name: "Classic Shell 2×2\"",     price: 48, qty: 9 },
-  { id: "shell-2-5x2-5",  name: "Standard Shell 2.5×2.5\"",price: 58, qty: 9 },
-  { id: "shell-2x3",      name: "Portrait Shell 2×3\"",     price: 52, qty: 6 },
-  { id: "shell-2-5x3-5",  name: "Story Shell 2.5×3.5\"",   price: 64, qty: 6 },
-  { id: "shell-3x3",      name: "Grand Shell 3×3\"",        price: 74, qty: 4 },
-  { id: "wedding-pack",   name: "Wedding Story Pack",       price: 89, qty: 9 },
-  { id: "puzzle-shells",  name: "Puzzle Shell Set",         price: 79, qty: 9 },
+const PRODUCT_DATA = [
+  { id: "shell-2x2",      price: 48, qty: 9 },
+  { id: "shell-2-5x2-5",  price: 58, qty: 9 },
+  { id: "shell-2x3",      price: 52, qty: 6 },
+  { id: "shell-2-5x3-5",  price: 64, qty: 6 },
+  { id: "shell-3x3",      price: 74, qty: 4 },
+  { id: "wedding-pack",   price: 89, qty: 9 },
+  { id: "puzzle-shells",  price: 79, qty: 9 },
 ];
 
 // ── Stripe card form (vanilla Stripe.js via CDN) ────────────────────────────
 function StripeForm({ amount, orderNumber, email, onSuccess }: {
   amount: number; orderNumber: string; email: string; onSuccess: () => void;
 }) {
+  const t = useTranslations("Order");
   const cardRef = useRef<HTMLDivElement>(null);
   const [ready, setReady] = useState(false);
   const [paying, setPaying] = useState(false);
@@ -114,7 +116,7 @@ function StripeForm({ amount, orderNumber, email, onSuccess }: {
         className="btn-primary"
         style={{ width: "100%", opacity: paying ? 0.7 : 1, cursor: paying ? "wait" : "pointer" }}
       >
-        {paying ? "Processing…" : `Pay $${amount}.00 with Card →`}
+        {paying ? t("saving") : t("continueToPayment", { total: amount })}
       </button>
       <p style={{ fontSize: "0.7rem", color: "var(--text-muted)", textAlign: "center", marginTop: "0.5rem" }}>
         🔒 Secured by Stripe · All major cards accepted
@@ -160,6 +162,11 @@ function PayPalButton({ amount, orderNumber, onSuccess }: {
 
 // ── Main Order Form ──────────────────────────────────────────────────────────
 function OrderForm() {
+  const locale = useLocale();
+  const t = useTranslations("Order");
+  const productNames = t.raw("products") as { name: string }[];
+  const PRODUCTS = PRODUCT_DATA.map((p, i) => ({ ...p, name: productNames[i].name }));
+
   const params = useSearchParams();
   const preselected = params.get("product") || "";
   const defaultProduct = PRODUCTS.find((p) => p.id === preselected) || PRODUCTS[0];
@@ -218,7 +225,7 @@ function OrderForm() {
         }
       }
     } catch {
-      alert("Something went wrong. Please email contact@memoirgems.com directly.");
+      alert(t("errorGeneric"));
     } finally {
       setSubmitting(false);
     }
@@ -229,11 +236,11 @@ function OrderForm() {
   async function handleFinishOrder() {
     setPhotosError("");
     if (uploadedPhotos.length === 0) {
-      setPhotosError("Please upload at least one photo before finishing your order.");
+      setPhotosError(t("errorUploadAtLeastOne"));
       return;
     }
     if (!form.addressLine1 || !form.city || !form.stateRegion || !form.postalCode) {
-      setPhotosError("Shipping address is missing — please go back and complete it.");
+      setPhotosError(t("errorMissingAddress"));
       return;
     }
     setFinishing(true);
@@ -263,10 +270,10 @@ function OrderForm() {
       if (data.success) {
         setSubmitted(true);
       } else {
-        setPhotosError(data.error || "Something went wrong saving your photos.");
+        setPhotosError(data.error || t("errorSavingPhotos"));
       }
     } catch {
-      setPhotosError("Something went wrong. Please email contact@memoirgems.com directly.");
+      setPhotosError(t("errorGeneric"));
     } finally {
       setFinishing(false);
     }
@@ -278,16 +285,16 @@ function OrderForm() {
       <div style={{ maxWidth: 560, margin: "4rem auto", padding: "3rem 2rem", background: "white", border: "1px solid var(--taupe)", textAlign: "center" }}>
         <div style={{ fontSize: "3rem", marginBottom: "1rem" }}>◆</div>
         <h2 style={{ fontFamily: "var(--font-display)", fontSize: "1.8rem", color: "var(--navy)", marginBottom: "1rem" }}>
-          {paid ? "Payment Confirmed!" : "Order Request Received!"}
+          {paid ? t("paymentConfirmed") : t("orderRequestReceived")}
         </h2>
         <div style={{ background: "var(--cream)", padding: "1rem", marginBottom: "1.5rem", fontSize: "0.85rem", color: "var(--navy)", fontWeight: 600 }}>
-          Order #{orderNumber}
+          {t("orderNumberPrefix", { orderNumber })}
         </div>
         <p style={{ fontSize: "0.88rem", color: "var(--text-mid)", lineHeight: 1.8, marginBottom: "2rem" }}>
-          Your photos were received and your order is in our production queue. You'll get an email confirmation shortly, and tracking once it ships.
+          {t("successBody")}
         </p>
-        <Link href="/en/products">
-          <span className="btn-primary" style={{ fontSize: "0.82rem" }}>Browse More Products</span>
+        <Link href={`/${locale}/products`}>
+          <span className="btn-primary" style={{ fontSize: "0.82rem" }}>{t("browseMoreProducts")}</span>
         </Link>
       </div>
     );
@@ -304,11 +311,11 @@ function OrderForm() {
             <span style={{ color: "var(--navy)", fontWeight: 600 }}>${selectedProduct.price} × {form.qty}</span>
           </div>
           <div style={{ display: "flex", justifyContent: "space-between", borderTop: "1px solid var(--taupe)", paddingTop: "0.6rem", marginTop: "0.6rem" }}>
-            <span style={{ fontWeight: 700, color: "var(--navy)" }}>Total</span>
+            <span style={{ fontWeight: 700, color: "var(--navy)" }}>{t("total")}</span>
             <span style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", color: "var(--gold)" }}>${total}.00</span>
           </div>
           <div style={{ fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "0.4rem" }}>
-            Order #{orderNumber} · Free U.S. shipping · 7-day production
+            {t("orderNumberPrefix", { orderNumber })} · {t("shippingNote")}
           </div>
         </div>
 
@@ -324,7 +331,7 @@ function OrderForm() {
                 border: "1px solid var(--navy)", cursor: "pointer",
               }}
             >
-              💳 Card
+              {t("cardTab")}
             </button>
           )}
           {PAYPAL_CLIENT_ID && (
@@ -337,7 +344,7 @@ function OrderForm() {
                 border: "1px solid var(--navy)", cursor: "pointer",
               }}
             >
-              🅿 PayPal
+              {t("paypalTab")}
             </button>
           )}
         </div>
@@ -360,7 +367,7 @@ function OrderForm() {
             )}
             {!stripeLoaded && (
               <p style={{ textAlign: "center", color: "var(--text-muted)", padding: "1rem" }}>
-                Loading payment form…
+                {t("loadingPaymentForm")}
               </p>
             )}
           </>
@@ -383,7 +390,7 @@ function OrderForm() {
             )}
             {!paypalLoaded && (
               <p style={{ textAlign: "center", color: "var(--text-muted)", padding: "1rem" }}>
-                Loading PayPal…
+                {t("loadingPaypal")}
               </p>
             )}
           </>
@@ -393,7 +400,7 @@ function OrderForm() {
           onClick={() => setStep("details")}
           style={{ marginTop: "1.5rem", background: "none", border: "none", color: "var(--text-muted)", fontSize: "0.8rem", cursor: "pointer", textDecoration: "underline", display: "block", margin: "1.5rem auto 0" }}
         >
-          ← Go back
+          {t("goBack")}
         </button>
       </div>
     );
@@ -407,17 +414,17 @@ function OrderForm() {
     return (
       <div style={{ maxWidth: 560, margin: "0 auto", padding: "2rem" }}>
         <div style={{ background: "var(--cream)", padding: "1.2rem 1.5rem", marginBottom: "1.5rem", border: "1px solid var(--taupe)", fontSize: "0.85rem" }}>
-          <div style={{ fontWeight: 700, color: "var(--navy)", marginBottom: "0.3rem" }}>Order #{orderNumber}</div>
+          <div style={{ fontWeight: 700, color: "var(--navy)", marginBottom: "0.3rem" }}>{t("orderNumberPrefix", { orderNumber })}</div>
           <div style={{ color: "var(--text-mid)" }}>
-            {selectedProduct.name} · {selectedProduct.qty * form.qty} piece(s) needed
+            {selectedProduct.name} · {t("piecesNeeded", { qty: selectedProduct.qty * form.qty })}
           </div>
         </div>
 
         <h2 style={{ fontFamily: "var(--font-display)", fontSize: "1.4rem", color: "var(--navy)", marginBottom: "0.6rem" }}>
-          Upload your photos
+          {t("uploadYourPhotos")}
         </h2>
         <p style={{ fontSize: "0.85rem", color: "var(--text-mid)", marginBottom: "1.2rem", lineHeight: 1.7 }}>
-          Upload the photos you want made into magnets. We recommend {selectedProduct.qty * form.qty} photo(s) for this order, but you can add more or finish with what you have.
+          {t("uploadDesc", { qty: selectedProduct.qty * form.qty })}
         </p>
 
         <UploadDropzone
@@ -429,7 +436,7 @@ function OrderForm() {
         {uploadedPhotos.length > 0 && (
           <div style={{ marginTop: "1.2rem" }}>
             <div style={{ fontSize: "0.78rem", fontWeight: 700, color: "var(--navy)", marginBottom: "0.6rem" }}>
-              {uploadedPhotos.length} photo(s) uploaded
+              {t("photosUploadedCount", { count: uploadedPhotos.length })}
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(72px, 1fr))", gap: "0.5rem" }}>
               {uploadedPhotos.map((file, i) => (
@@ -453,7 +460,7 @@ function OrderForm() {
           className="btn-primary"
           style={{ width: "100%", marginTop: "1.5rem", opacity: finishing || uploadedPhotos.length === 0 ? 0.6 : 1, cursor: finishing ? "wait" : "pointer" }}
         >
-          {finishing ? "Finishing order…" : "Finish Order →"}
+          {finishing ? t("finishingOrder") : t("finishOrderCta")}
         </button>
       </div>
     );
@@ -467,20 +474,20 @@ function OrderForm() {
       <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "2rem", fontSize: "0.75rem" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "0.3rem", fontWeight: 700, color: "var(--navy)" }}>
           <div style={{ width: 22, height: 22, borderRadius: "50%", background: "var(--navy)", color: "white", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "0.7rem", fontWeight: 700 }}>1</div>
-          Order Details
+          {t("stepOrderDetails")}
         </div>
         <div style={{ flex: 1, height: 1, background: "var(--taupe)" }} />
         <div style={{ display: "flex", alignItems: "center", gap: "0.3rem", color: "var(--text-muted)" }}>
           <div style={{ width: 22, height: 22, borderRadius: "50%", background: "var(--taupe)", color: "white", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "0.7rem", fontWeight: 700 }}>2</div>
-          Payment
+          {t("stepPayment")}
         </div>
       </div>
 
       {/* Product */}
       <div style={{ background: "var(--cream)", padding: "1.5rem", marginBottom: "2rem", border: "1px solid var(--taupe)" }}>
-        <div className="section-label" style={{ marginBottom: "1rem" }}>◆ Your Order</div>
+        <div className="section-label" style={{ marginBottom: "1rem" }}>{t("yourOrder")}</div>
         <div style={{ marginBottom: "1rem" }}>
-          <label style={labelStyle}>Product</label>
+          <label style={labelStyle}>{t("product")}</label>
           <select
             value={form.product}
             onChange={(e) => setForm({ ...form, product: e.target.value })}
@@ -488,14 +495,14 @@ function OrderForm() {
           >
             {PRODUCTS.map((p) => (
               <option key={p.id} value={p.id}>
-                {p.name} — ${p.price} ({p.qty} pieces per set)
+                {p.name} — ${p.price} ({p.qty} {locale === "es" ? "piezas por set" : "pieces per set"})
               </option>
             ))}
           </select>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
           <div style={{ flex: 1 }}>
-            <label style={labelStyle}>Quantity (sets)</label>
+            <label style={labelStyle}>{t("quantitySets")}</label>
             <input
               type="number" min={1} max={50}
               value={form.qty}
@@ -508,16 +515,16 @@ function OrderForm() {
           </div>
         </div>
         <div style={{ fontSize: "0.72rem", color: "var(--text-muted)", marginTop: "0.8rem" }}>
-          Free U.S. shipping · 7-day production · NFC + QR included · Gift Pouch included
+          {t("shippingNote")}
         </div>
       </div>
 
       {/* Contact */}
-      <div className="section-label" style={{ marginBottom: "1rem" }}>◆ Your Information</div>
+      <div className="section-label" style={{ marginBottom: "1rem" }}>{t("yourInformation")}</div>
       {[
-        { name: "name",  label: "Full Name",        type: "text",  placeholder: "Jane Smith",           required: true },
-        { name: "email", label: "Email Address",     type: "email", placeholder: "jane@example.com",     required: true },
-        { name: "phone", label: "Phone (optional)",  type: "tel",   placeholder: "+1 (555) 000-0000",    required: false },
+        { name: "name",  label: t("fullNameLabel"),  type: "text",  placeholder: "Jane Smith",           required: true },
+        { name: "email", label: t("emailLabel"),     type: "email", placeholder: "jane@example.com",     required: true },
+        { name: "phone", label: t("phoneLabel"),     type: "tel",   placeholder: "+1 (555) 000-0000",    required: false },
       ].map((f) => (
         <div key={f.name} style={{ marginBottom: "1.2rem" }}>
           <label style={labelStyle}>{f.label}</label>
@@ -533,9 +540,9 @@ function OrderForm() {
       ))}
 
       {/* Shipping address */}
-      <div className="section-label" style={{ marginBottom: "1rem" }}>◆ Shipping Address</div>
+      <div className="section-label" style={{ marginBottom: "1rem" }}>{t("shippingAddress")}</div>
       <div style={{ marginBottom: "1.2rem" }}>
-        <label style={labelStyle}>Address Line 1</label>
+        <label style={labelStyle}>{t("addressLine1Label")}</label>
         <input
           type="text" required placeholder="123 Main St"
           value={form.addressLine1}
@@ -544,7 +551,7 @@ function OrderForm() {
         />
       </div>
       <div style={{ marginBottom: "1.2rem" }}>
-        <label style={labelStyle}>Address Line 2 (optional)</label>
+        <label style={labelStyle}>{t("addressLine2Label")}</label>
         <input
           type="text" placeholder="Apt, suite, etc."
           value={form.addressLine2}
@@ -554,7 +561,7 @@ function OrderForm() {
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr 1fr", gap: "0.8rem", marginBottom: "1.2rem" }}>
         <div>
-          <label style={labelStyle}>City</label>
+          <label style={labelStyle}>{t("cityLabel")}</label>
           <input
             type="text" required placeholder="Houston"
             value={form.city}
@@ -563,7 +570,7 @@ function OrderForm() {
           />
         </div>
         <div>
-          <label style={labelStyle}>State</label>
+          <label style={labelStyle}>{t("stateLabel")}</label>
           <input
             type="text" required placeholder="TX"
             value={form.stateRegion}
@@ -572,7 +579,7 @@ function OrderForm() {
           />
         </div>
         <div>
-          <label style={labelStyle}>ZIP</label>
+          <label style={labelStyle}>{t("zipLabel")}</label>
           <input
             type="text" required placeholder="77301"
             value={form.postalCode}
@@ -582,7 +589,7 @@ function OrderForm() {
         </div>
       </div>
       <div style={{ marginBottom: "1.5rem" }}>
-        <label style={labelStyle}>Country</label>
+        <label style={labelStyle}>{t("countryLabel")}</label>
         <input
           type="text" required placeholder="United States"
           value={form.country}
@@ -594,14 +601,14 @@ function OrderForm() {
       {/* Payment preference (if no gateway keys, show legacy options) */}
       {!STRIPE_PK && !PAYPAL_CLIENT_ID && (
         <div style={{ marginBottom: "1.5rem" }}>
-          <div className="section-label" style={{ marginBottom: "1rem" }}>◆ Payment Preference</div>
+          <div className="section-label" style={{ marginBottom: "1rem" }}>{t("paymentPreference")}</div>
           <p style={{ fontSize: "0.78rem", color: "var(--text-muted)", marginBottom: "0.8rem" }}>
-            We'll send you a payment link via email:
+            {t("paymentPreferenceNote")}
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.6rem" }}>
             {[
               { id: "paypal", label: "PayPal", icon: "🅿" },
-              { id: "card",   label: "Credit / Debit", icon: "💳" },
+              { id: "card",   label: t("paymentCreditDebit"), icon: "💳" },
               { id: "venmo",  label: "Venmo", icon: "V" },
               { id: "zelle",  label: "Zelle", icon: "Z" },
             ].map((m) => (
@@ -628,10 +635,10 @@ function OrderForm() {
 
       {/* Notes */}
       <div style={{ marginBottom: "1.5rem" }}>
-        <label style={labelStyle}>Notes (optional)</label>
+        <label style={labelStyle}>{t("notesLabel")}</label>
         <textarea
           rows={3}
-          placeholder="Gift message, rush order, special instructions…"
+          placeholder={t("notesPlaceholder")}
           value={form.notes}
           onChange={(e) => setForm({ ...form, notes: e.target.value })}
           style={{ ...inputStyle, width: "100%", resize: "vertical" }}
@@ -643,18 +650,16 @@ function OrderForm() {
         style={{ width: "100%", fontSize: "0.88rem", cursor: submitting ? "wait" : "pointer", opacity: submitting ? 0.7 : 1 }}
       >
         {submitting
-          ? "Saving…"
+          ? t("saving")
           : STRIPE_PK || PAYPAL_CLIENT_ID
-            ? `Continue to Payment — $${total}.00 →`
-            : `Place Order Request — $${total}.00 →`}
+            ? t("continueToPayment", { total })
+            : t("placeOrderRequestPrice", { total })}
       </button>
 
       <p style={{ fontSize: "0.72rem", color: "var(--text-muted)", textAlign: "center", marginTop: "1rem", lineHeight: 1.6 }}>
-        {STRIPE_PK || PAYPAL_CLIENT_ID
-          ? "Your order is saved. Next step: secure payment, then upload your photos."
-          : "No payment now. Next step: upload your photos — we'll email you a payment link within a few hours."}
+        {STRIPE_PK || PAYPAL_CLIENT_ID ? t("footNoteWithGateway") : t("footNoteNoGateway")}
         <br />
-        Production: 7 business days after photos are received.
+        {t("productionNote")}
       </p>
     </form>
   );
@@ -672,19 +677,20 @@ const inputStyle: React.CSSProperties = {
 };
 
 export default function OrderPage() {
+  const t = useTranslations("Order");
   return (
     <div style={{ background: "var(--ivory)", minHeight: "100vh", paddingBottom: "5rem" }}>
       <div style={{ background: "var(--navy)", padding: "4rem 2rem", textAlign: "center" }}>
-        <div className="section-label" style={{ color: "var(--gold-light)", marginBottom: "0.8rem" }}>◆ Order</div>
+        <div className="section-label" style={{ color: "var(--gold-light)", marginBottom: "0.8rem" }}>◆ {t("eyebrow")}</div>
         <h1 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.8rem, 3vw, 2.8rem)", fontWeight: 400, color: "var(--ivory)", marginBottom: "0.8rem" }}>
-          Place Your Order
+          {t("title")}
         </h1>
         <p style={{ color: "var(--taupe)", fontSize: "0.88rem" }}>
-          Premium photo magnets · Free U.S. shipping · 7-day production
+          {t("sub")}
         </p>
       </div>
 
-      <Suspense fallback={<div style={{ textAlign: "center", padding: "4rem" }}>Loading…</div>}>
+      <Suspense fallback={<div style={{ textAlign: "center", padding: "4rem" }}>{t("loading")}</div>}>
         <OrderForm />
       </Suspense>
     </div>
