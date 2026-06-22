@@ -57,12 +57,30 @@
       "eyebrow": "Cómo funciona",
       "title": "De la foto al recuerdo, en seis sencillos pasos",
       "steps": [
-        { "title": "Elige tu tamaño", "desc": "Cuadrado, rectangular o redondo — elige la forma de tu Gema." },
-        { "title": "Elige tu set", "desc": "Desde una historia de 5 Gemas hasta una colección de 50." },
-        { "title": "Sube tus fotos", "desc": "Arrastra a las personas, mascotas y lugares que importan." },
-        { "title": "Recorta y previsualiza", "desc": "Encuadra cada imagen exactamente como la quieres." },
-        { "title": "Paga de forma segura", "desc": "Un proceso de pago simple y seguro en pocos pasos." },
-        { "title": "Lo hacemos y lo enviamos", "desc": "Elaboramos, empacamos y enviamos tus recuerdos con cuidado." }
+        {
+          "title": "Elige tu tamaño",
+          "desc": "Cuadrado, rectangular o redondo — elige la forma de tu Gema."
+        },
+        {
+          "title": "Elige tu set",
+          "desc": "Desde una historia de 5 Gemas hasta una colección de 50."
+        },
+        {
+          "title": "Sube tus fotos",
+          "desc": "Arrastra a las personas, mascotas y lugares que importan."
+        },
+        {
+          "title": "Recorta y previsualiza",
+          "desc": "Encuadra cada imagen exactamente como la quieres."
+        },
+        {
+          "title": "Paga de forma segura",
+          "desc": "Un proceso de pago simple y seguro en pocos pasos."
+        },
+        {
+          "title": "Lo hacemos y lo enviamos",
+          "desc": "Elaboramos, empacamos y enviamos tus recuerdos con cuidado."
+        }
       ]
     },
     "categories": {
@@ -71,24 +89,60 @@
       "sub": "Cinco formatos hechos a mano, pensados para verse y tocarse todos los días.",
       "linkLabel": "Personalizar",
       "items": [
-        { "title": "Gemas Cuadradas", "desc": "El clásico recuerdo. Nítido, equilibrado y perfecto para regalar.", "price": "desde $7" },
-        { "title": "Gemas Rectangulares", "desc": "Pensadas para retratos y momentos que necesitan un poco más de espacio.", "price": "desde $8" },
-        { "title": "Sets de Regalo", "desc": "Colecciones listas para regalar, envueltas y selladas en dorado.", "price": "desde $39" },
-        { "title": "Gemas Conmemorativas", "desc": "Una forma entrañable de mantener cerca a quienes amamos.", "price": "desde $8" },
-        { "title": "Gemas para Negocios", "desc": "Códigos QR, logos y promociones — recuerdos que mantienen tu marca presente.", "price": "desde $2.50" }
+        {
+          "title": "Gemas Cuadradas",
+          "desc": "El clásico recuerdo. Nítido, equilibrado y perfecto para regalar.",
+          "price": "desde $7"
+        },
+        {
+          "title": "Gemas Rectangulares",
+          "desc": "Pensadas para retratos y momentos que necesitan un poco más de espacio.",
+          "price": "desde $8"
+        },
+        {
+          "title": "Sets de Regalo",
+          "desc": "Colecciones listas para regalar, envueltas y selladas en dorado.",
+          "price": "desde $39"
+        },
+        {
+          "title": "Gemas Conmemorativas",
+          "desc": "Una forma entrañable de mantener cerca a quienes amamos.",
+          "price": "desde $8"
+        },
+        {
+          "title": "Gemas para Negocios",
+          "desc": "Códigos QR, logos y promociones — recuerdos que mantienen tu marca presente.",
+          "price": "desde $2.50"
+        }
       ]
     },
     "life": {
       "eyebrow": "Por ocasión",
       "title": "Un recuerdo para cada etapa de tu vida",
       "sub": "Colecciones curadas para los momentos, personas y lugares que vale la pena recordar.",
-      "items": ["Gemas Familiares", "Gemas de Mascotas", "Gemas de Boda", "Bebés y Logros", "Gemas Conmemorativas", "Gemas de Viaje", "Gemas de Graduación", "Sets de Regalo Navideños"]
+      "items": [
+        "Gemas Familiares",
+        "Gemas de Mascotas",
+        "Gemas de Boda",
+        "Bebés y Logros",
+        "Gemas Conmemorativas",
+        "Gemas de Viaje",
+        "Gemas de Graduación",
+        "Sets de Regalo Navideños"
+      ]
     },
     "packaging": {
       "eyebrow": "El unboxing",
       "title": "Listo para regalar desde que llega.",
       "desc": "Cada pedido se prepara con una presentación cálida y artesanal — pensada para sentirse personal, cuidada y lista para regalar.",
-      "items": ["Tarjeta de agradecimiento", "Tarjeta de cuidado", "Envoltorio de papel", "Sello dorado", "Nota de regalo opcional", "Caja premium opcional"]
+      "items": [
+        "Tarjeta de agradecimiento",
+        "Tarjeta de cuidado",
+        "Envoltorio de papel",
+        "Sello dorado",
+        "Nota de regalo opcional",
+        "Caja premium opcional"
+      ]
     },
     "b2b": {
       "eyebrow": "Para empresas y eventos",
@@ -97,14 +151,38 @@
       "mobileTeaser": "Restaurantes, inmobiliarias, bodas, escuelas y equipos — pedidos al por mayor desde unas pocas piezas hasta cincuenta mil.",
       "cta": "Solicita una cotización al mayor",
       "chips": [
-        { "title": "Imanes QR para Restaurantes", "sub": "Menús y reseñas, en el refrigerador" },
-        { "title": "Imanes de Tarjeta de Presentación", "sub": "Tu contacto, siempre a la mano" },
-        { "title": "Imanes para Agentes Inmobiliarios", "sub": "Mantente presente en cada hogar" },
-        { "title": "Imanes para Salones de Belleza", "sub": "Reagendar nunca fue tan fácil" },
-        { "title": "Imanes para Contratistas", "sub": "Tu número, siempre disponible" },
-        { "title": "Recuerdos de Boda", "sub": "Detalles que tus invitados van a adorar" },
-        { "title": "Imanes Escolares", "sub": "Fotos de la clase y recaudación de fondos" },
-        { "title": "Recuerdos de Eventos", "sub": "Detalles memorables para llevar a casa" }
+        {
+          "title": "Imanes QR para Restaurantes",
+          "sub": "Menús y reseñas, en el refrigerador"
+        },
+        {
+          "title": "Imanes de Tarjeta de Presentación",
+          "sub": "Tu contacto, siempre a la mano"
+        },
+        {
+          "title": "Imanes para Agentes Inmobiliarios",
+          "sub": "Mantente presente en cada hogar"
+        },
+        {
+          "title": "Imanes para Salones de Belleza",
+          "sub": "Reagendar nunca fue tan fácil"
+        },
+        {
+          "title": "Imanes para Contratistas",
+          "sub": "Tu número, siempre disponible"
+        },
+        {
+          "title": "Recuerdos de Boda",
+          "sub": "Detalles que tus invitados van a adorar"
+        },
+        {
+          "title": "Imanes Escolares",
+          "sub": "Fotos de la clase y recaudación de fondos"
+        },
+        {
+          "title": "Recuerdos de Eventos",
+          "sub": "Detalles memorables para llevar a casa"
+        }
       ]
     },
     "story": {
@@ -118,14 +196,38 @@
       "eyebrow": "Bueno saberlo",
       "title": "Preguntas frecuentes",
       "items": [
-        { "q": "¿Qué tipo de fotos funciona mejor?", "a": "Las fotos nítidas y bien iluminadas, con el sujeto cerca del centro, se ven hermosas. Las imágenes de mayor resolución dan los resultados más definidos, pero nuestra herramienta de vista previa te permite recortar y hacer zoom para que cada Gema luzca perfecta antes de ordenar." },
-        { "q": "¿Puedo usar fotos distintas en un mismo set?", "a": "Claro que sí. Cada Gema de tu set puede ser una foto diferente — combina familia, mascotas, viajes y momentos especiales en un solo pedido. Sube tantas fotos como tu set lo permita." },
-        { "q": "¿Son imanes flexibles?", "a": "No — y es intencional. Cada Gema está hecha sobre una base firme y rígida, en lugar de una lámina delgada y flexible, para que tu foto se mantenga perfectamente plana, nítida y protegida por años. Un imán resistente la sujeta con firmeza en refrigeradores, casilleros y archivadores." },
-        { "q": "¿Puedo recortar mis fotos antes de pagar?", "a": "Sí. Nuestra vista previa en vivo te permite hacer zoom, rotar y encuadrar cada foto en la forma de Gema elegida, para que sepas exactamente cómo se verá cada recuerdo antes de pagar." },
-        { "q": "¿Ofrecen empaque de regalo?", "a": "Cada pedido llega listo para regalar, con tarjeta de agradecimiento, tarjeta de cuidado, envoltorio de papel y sello dorado. También puedes agregar una nota de regalo y una caja premium al pagar." },
-        { "q": "¿Hacen pedidos para empresas o eventos?", "a": "Sí — desde menús con QR y tarjetas de presentación hasta recuerdos de boda y recaudaciones escolares. Elige el Set al por mayor de 50 Gemas o solicita una cotización personalizada para pedidos más grandes." },
-        { "q": "¿Cuánto tarda la producción?", "a": "La mayoría de los pedidos se hacen a mano y se envían en 3 a 5 días hábiles. Los pedidos grandes, al por mayor o para eventos, pueden tardar un poco más — te confirmaremos los tiempos directamente." },
-        { "q": "¿Hacen envíos a todo Estados Unidos?", "a": "Sí. Enviamos a nivel nacional, con envío gratis en pedidos desde $35. Recibirás el número de rastreo en cuanto tus recuerdos estén en camino." }
+        {
+          "q": "¿Qué tipo de fotos funciona mejor?",
+          "a": "Las fotos nítidas y bien iluminadas, con el sujeto cerca del centro, se ven hermosas. Las imágenes de mayor resolución dan los resultados más definidos, pero nuestra herramienta de vista previa te permite recortar y hacer zoom para que cada Gema luzca perfecta antes de ordenar."
+        },
+        {
+          "q": "¿Puedo usar fotos distintas en un mismo set?",
+          "a": "Claro que sí. Cada Gema de tu set puede ser una foto diferente — combina familia, mascotas, viajes y momentos especiales en un solo pedido. Sube tantas fotos como tu set lo permita."
+        },
+        {
+          "q": "¿Son imanes flexibles?",
+          "a": "No — y es intencional. Cada Gema está hecha sobre una base firme y rígida, en lugar de una lámina delgada y flexible, para que tu foto se mantenga perfectamente plana, nítida y protegida por años. Un imán resistente la sujeta con firmeza en refrigeradores, casilleros y archivadores."
+        },
+        {
+          "q": "¿Puedo recortar mis fotos antes de pagar?",
+          "a": "Sí. Nuestra vista previa en vivo te permite hacer zoom, rotar y encuadrar cada foto en la forma de Gema elegida, para que sepas exactamente cómo se verá cada recuerdo antes de pagar."
+        },
+        {
+          "q": "¿Ofrecen empaque de regalo?",
+          "a": "Cada pedido llega listo para regalar, con tarjeta de agradecimiento, tarjeta de cuidado, envoltorio de papel y sello dorado. También puedes agregar una nota de regalo y una caja premium al pagar."
+        },
+        {
+          "q": "¿Hacen pedidos para empresas o eventos?",
+          "a": "Sí — desde menús con QR y tarjetas de presentación hasta recuerdos de boda y recaudaciones escolares. Elige el Set al por mayor de 50 Gemas o solicita una cotización personalizada para pedidos más grandes."
+        },
+        {
+          "q": "¿Cuánto tarda la producción?",
+          "a": "La mayoría de los pedidos se hacen a mano y se envían en 3 a 5 días hábiles. Los pedidos grandes, al por mayor o para eventos, pueden tardar un poco más — te confirmaremos los tiempos directamente."
+        },
+        {
+          "q": "¿Hacen envíos a todo Estados Unidos?",
+          "a": "Sí. Enviamos a nivel nacional, con envío gratis en pedidos desde $35. Recibirás el número de rastreo en cuanto tus recuerdos estén en camino."
+        }
       ]
     },
     "ctaBand": {
@@ -135,5 +237,144 @@
       "cta": "Crea tus Gemas"
     },
     "stickyCta": "Crea tus Gemas"
+  },
+  "Customize": {
+    "eyebrow": "Comienza tu pedido",
+    "title": "Personaliza tus Shells",
+    "stepChooseSize": "Elige el tamaño",
+    "stepUploadPhotos": "Sube tus fotos",
+    "stepPlaceOrder": "Haz tu pedido",
+    "step1Title": "Elige el tamaño de tu Shell",
+    "piecesSuffix": "piezas",
+    "continue": "Continuar →",
+    "back": "← Atrás",
+    "step2Title": "Fotos",
+    "step2Desc": "Recibirás un enlace seguro para subir tus fotos por correo después de hacer tu pedido. Puedes subir una foto para cada Shell — cualquier foto de tu teléfono o cámara funciona.",
+    "photoCardTitle": "Las fotos se envían después del pago",
+    "photoCardDesc": "Te enviaremos un enlace seguro a tu correo. Sube {qty} fotos — una por Shell.",
+    "photoCardNote": "Revisamos cada foto antes de imprimir. Se recomienda un mínimo de 1500×1500px.",
+    "puzzleNoteLabel": "◆ Set Puzzle Shell:",
+    "puzzleNoteDesc": "Envía solo 1 foto. La dividiremos automáticamente en la cuadrícula de 9 piezas. Aprobarás el diseño antes de imprimir.",
+    "step3Title": "Resumen del pedido",
+    "summaryProduct": "Producto",
+    "summaryPieces": "Piezas",
+    "summaryPrice": "Precio",
+    "summaryShipping": "Envío",
+    "summaryShippingValue": "Gratis (EE. UU.)",
+    "summaryProduction": "Producción",
+    "summaryProductionValue": "7 días hábiles",
+    "summaryPackaging": "Empaque",
+    "summaryPackagingValue": "Bolsa Gather de la firma",
+    "summaryNfc": "NFC + QR",
+    "summaryNfcValue": "Incluido en cada pieza",
+    "summaryShellsSuffix": "imanes Shell",
+    "paymentAcceptedLabel": "Pagos aceptados:",
+    "paymentAcceptedNote": "Sin pago por ahora — te enviamos un enlace seguro a tu correo después de confirmar tu pedido.",
+    "placeOrderRequest": "Hacer pedido →",
+    "finalNote": "Después de enviar tu solicitud, te enviaremos un enlace de pago por correo en unas horas. Una vez pagado, recibirás un enlace seguro para subir tus fotos.",
+    "sizes": [
+      {
+        "label": "Clásico 2×2\"",
+        "desc": "El más popular"
+      },
+      {
+        "label": "Estándar 2.5×2.5\"",
+        "desc": "Panorámicas y grupos"
+      },
+      {
+        "label": "Retrato 2×3\"",
+        "desc": "Bodas y conmemorativos"
+      },
+      {
+        "label": "Historia 2.5×3.5\"",
+        "desc": "Tamaño centro de mesa"
+      },
+      {
+        "label": "Grande 3×3\"",
+        "desc": "Máximo impacto"
+      },
+      {
+        "label": "Set Puzzle Shell",
+        "desc": "1 foto dividida en 9"
+      }
+    ]
+  },
+  "Order": {
+    "eyebrow": "Pedido",
+    "title": "Haz tu pedido",
+    "sub": "Imanes de fotos premium · Envío gratis en EE. UU. · Producción en 7 días",
+    "loading": "Cargando…",
+    "stepOrderDetails": "Detalles del pedido",
+    "stepPayment": "Pago",
+    "yourOrder": "◆ Tu pedido",
+    "product": "Producto",
+    "quantitySets": "Cantidad (sets)",
+    "shippingNote": "Envío gratis en EE. UU. · Producción en 7 días · NFC + QR incluido · Bolsa de regalo incluida",
+    "yourInformation": "◆ Tu información",
+    "fullNameLabel": "Nombre completo",
+    "emailLabel": "Correo electrónico",
+    "phoneLabel": "Teléfono (opcional)",
+    "shippingAddress": "◆ Dirección de envío",
+    "addressLine1Label": "Dirección línea 1",
+    "addressLine2Label": "Dirección línea 2 (opcional)",
+    "cityLabel": "Ciudad",
+    "stateLabel": "Estado",
+    "zipLabel": "Código postal",
+    "countryLabel": "País",
+    "paymentPreference": "◆ Preferencia de pago",
+    "paymentPreferenceNote": "Te enviaremos un enlace de pago por correo:",
+    "paymentCreditDebit": "Tarjeta de crédito/débito",
+    "notesLabel": "Notas (opcional)",
+    "notesPlaceholder": "Mensaje de regalo, pedido urgente, instrucciones especiales…",
+    "saving": "Guardando…",
+    "continueToPayment": "Continuar al pago — ${total}.00 →",
+    "placeOrderRequestPrice": "Hacer pedido — ${total}.00 →",
+    "footNoteWithGateway": "Tu pedido está guardado. Siguiente paso: pago seguro y luego subir tus fotos.",
+    "footNoteNoGateway": "Sin pago por ahora. Siguiente paso: sube tus fotos — te enviaremos un enlace de pago en unas horas.",
+    "productionNote": "Producción: 7 días hábiles después de recibir las fotos.",
+    "orderNumberPrefix": "Pedido #{orderNumber}",
+    "total": "Total",
+    "cardTab": "💳 Tarjeta",
+    "paypalTab": "🅿 PayPal",
+    "loadingPaymentForm": "Cargando formulario de pago…",
+    "loadingPaypal": "Cargando PayPal…",
+    "goBack": "← Regresar",
+    "piecesNeeded": "Se necesitan {qty} pieza(s)",
+    "uploadYourPhotos": "Sube tus fotos",
+    "uploadDesc": "Sube las fotos que quieres convertir en imanes. Recomendamos {qty} foto(s) para este pedido, pero puedes agregar más o terminar con las que tengas.",
+    "photosUploadedCount": "{count} foto(s) subida(s)",
+    "finishingOrder": "Finalizando pedido…",
+    "finishOrderCta": "Finalizar pedido →",
+    "paymentConfirmed": "¡Pago confirmado!",
+    "orderRequestReceived": "¡Solicitud de pedido recibida!",
+    "successBody": "Recibimos tus fotos y tu pedido ya está en nuestra fila de producción. Recibirás un correo de confirmación pronto, y el rastreo en cuanto se envíe.",
+    "browseMoreProducts": "Ver más productos",
+    "errorUploadAtLeastOne": "Por favor sube al menos una foto antes de finalizar tu pedido.",
+    "errorMissingAddress": "Falta la dirección de envío — regresa y complétala.",
+    "errorGeneric": "Algo salió mal. Por favor escribe directamente a contact@memoirgems.com.",
+    "errorSavingPhotos": "Algo salió mal al guardar tus fotos.",
+    "products": [
+      {
+        "name": "Shell Clásico 2×2\""
+      },
+      {
+        "name": "Shell Estándar 2.5×2.5\""
+      },
+      {
+        "name": "Shell Retrato 2×3\""
+      },
+      {
+        "name": "Shell Historia 2.5×3.5\""
+      },
+      {
+        "name": "Shell Grande 3×3\""
+      },
+      {
+        "name": "Paquete de Boda"
+      },
+      {
+        "name": "Set Puzzle Shell"
+      }
+    ]
   }
 }

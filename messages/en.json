@@ -57,12 +57,30 @@
       "eyebrow": "How it works",
       "title": "From photo to keepsake in six small steps",
       "steps": [
-        { "title": "Choose your size", "desc": "Square, rectangle, or round — pick the shape of your Gem." },
-        { "title": "Choose your set", "desc": "From a 5-Gem story to a 50-Gem legacy collection." },
-        { "title": "Upload your photos", "desc": "Drag in the people, pets, and places that matter." },
-        { "title": "Crop & preview", "desc": "Frame each image exactly how you want it." },
-        { "title": "Checkout securely", "desc": "A simple, safe checkout in just a few taps." },
-        { "title": "We craft & ship", "desc": "We make, pack, and send your keepsakes with care." }
+        {
+          "title": "Choose your size",
+          "desc": "Square, rectangle, or round — pick the shape of your Gem."
+        },
+        {
+          "title": "Choose your set",
+          "desc": "From a 5-Gem story to a 50-Gem legacy collection."
+        },
+        {
+          "title": "Upload your photos",
+          "desc": "Drag in the people, pets, and places that matter."
+        },
+        {
+          "title": "Crop & preview",
+          "desc": "Frame each image exactly how you want it."
+        },
+        {
+          "title": "Checkout securely",
+          "desc": "A simple, safe checkout in just a few taps."
+        },
+        {
+          "title": "We craft & ship",
+          "desc": "We make, pack, and send your keepsakes with care."
+        }
       ]
     },
     "categories": {
@@ -71,24 +89,60 @@
       "sub": "Five handcrafted formats, each made to be seen and touched every day.",
       "linkLabel": "Customize",
       "items": [
-        { "title": "Square Photo Gems", "desc": "The classic keepsake. Crisp, balanced, and endlessly giftable.", "price": "from $7" },
-        { "title": "Rectangle Photo Gems", "desc": "Made for portraits and the moments that need a little more room.", "price": "from $8" },
-        { "title": "Gift Sets", "desc": "Ready-to-give collections, wrapped and finished with a gold seal.", "price": "from $39" },
-        { "title": "Memorial Gems", "desc": "A gentle way to keep the people and pets we love close.", "price": "from $8" },
-        { "title": "Business Gems", "desc": "QR codes, logos, and promos — keepsakes that keep your brand close.", "price": "from $2.50" }
+        {
+          "title": "Square Photo Gems",
+          "desc": "The classic keepsake. Crisp, balanced, and endlessly giftable.",
+          "price": "from $7"
+        },
+        {
+          "title": "Rectangle Photo Gems",
+          "desc": "Made for portraits and the moments that need a little more room.",
+          "price": "from $8"
+        },
+        {
+          "title": "Gift Sets",
+          "desc": "Ready-to-give collections, wrapped and finished with a gold seal.",
+          "price": "from $39"
+        },
+        {
+          "title": "Memorial Gems",
+          "desc": "A gentle way to keep the people and pets we love close.",
+          "price": "from $8"
+        },
+        {
+          "title": "Business Gems",
+          "desc": "QR codes, logos, and promos — keepsakes that keep your brand close.",
+          "price": "from $2.50"
+        }
       ]
     },
     "life": {
       "eyebrow": "Life Events",
       "title": "A keepsake for every chapter",
       "sub": "Curated collections for the milestones, people, and places worth remembering.",
-      "items": ["Family Gems", "Pet Gems", "Wedding Gems", "Baby & Milestone", "Memorial Gems", "Travel Gems", "Graduation Gems", "Holiday Gift Sets"]
+      "items": [
+        "Family Gems",
+        "Pet Gems",
+        "Wedding Gems",
+        "Baby & Milestone",
+        "Memorial Gems",
+        "Travel Gems",
+        "Graduation Gems",
+        "Holiday Gift Sets"
+      ]
     },
     "packaging": {
       "eyebrow": "The unboxing",
       "title": "Gift-ready from the moment it arrives.",
       "desc": "Every order is carefully prepared with a warm, handcrafted presentation — designed to feel personal, thoughtful, and ready to gift.",
-      "items": ["Thank-you card", "Care card", "Paper wrap", "Gold seal", "Optional gift note", "Optional premium box"]
+      "items": [
+        "Thank-you card",
+        "Care card",
+        "Paper wrap",
+        "Gold seal",
+        "Optional gift note",
+        "Optional premium box"
+      ]
     },
     "b2b": {
       "eyebrow": "For business & events",
@@ -97,14 +151,38 @@
       "mobileTeaser": "Restaurants, realtors, weddings, schools & teams — bulk orders from a handful to fifty thousand pieces.",
       "cta": "Request a bulk quote",
       "chips": [
-        { "title": "Restaurant QR Magnets", "sub": "Menus & reviews, on the fridge" },
-        { "title": "Business Card Magnets", "sub": "Contact info they'll keep" },
-        { "title": "Realtor Magnets", "sub": "Stay top-of-mind at home" },
-        { "title": "Salon Magnets", "sub": "Rebooking made easy" },
-        { "title": "Contractor Magnets", "sub": "Your number, always handy" },
-        { "title": "Wedding Favors", "sub": "Keepsakes guests adore" },
-        { "title": "School Magnets", "sub": "Class photos & fundraisers" },
-        { "title": "Event Keepsakes", "sub": "Memorable take-homes" }
+        {
+          "title": "Restaurant QR Magnets",
+          "sub": "Menus & reviews, on the fridge"
+        },
+        {
+          "title": "Business Card Magnets",
+          "sub": "Contact info they'll keep"
+        },
+        {
+          "title": "Realtor Magnets",
+          "sub": "Stay top-of-mind at home"
+        },
+        {
+          "title": "Salon Magnets",
+          "sub": "Rebooking made easy"
+        },
+        {
+          "title": "Contractor Magnets",
+          "sub": "Your number, always handy"
+        },
+        {
+          "title": "Wedding Favors",
+          "sub": "Keepsakes guests adore"
+        },
+        {
+          "title": "School Magnets",
+          "sub": "Class photos & fundraisers"
+        },
+        {
+          "title": "Event Keepsakes",
+          "sub": "Memorable take-homes"
+        }
       ]
     },
     "story": {
@@ -118,14 +196,38 @@
       "eyebrow": "Good to know",
       "title": "Frequently asked questions",
       "items": [
-        { "q": "What kind of photos work best?", "a": "Clear, well-lit photos with your subject close to the center work beautifully. Higher-resolution images give the sharpest results, but our preview tool lets you crop and zoom so every Gem looks its best before you order." },
-        { "q": "Can I use different photos in one pack?", "a": "Absolutely. Every Gem in your set can be a different photo — mix family, pets, trips, and milestones in a single order. Upload as many photos as your story set allows." },
-        { "q": "Are these flexible magnets?", "a": "No — and that's intentional. Each Gem is crafted on a firm, rigid base rather than a thin bendable sheet, so your photo stays perfectly flat, crisp, and protected for years. A strong magnetic backing holds it securely on refrigerators, lockers, and filing cabinets." },
-        { "q": "Can I crop my photos before checkout?", "a": "You can. Our live preview lets you zoom, rotate, and frame each photo in your chosen Gem shape, so you'll know exactly how every keepsake will look before you pay." },
-        { "q": "Do you offer gift packaging?", "a": "Every order arrives gift-ready with a thank-you card, care card, paper wrap, and gold seal. You can also add an optional gift note and premium box at checkout." },
-        { "q": "Do you make business or event orders?", "a": "Yes — from QR menus and business cards to wedding favors and school fundraisers. Choose the 50-Gem Bulk Set or request a custom quote for larger runs." },
-        { "q": "How long does production take?", "a": "Most orders are handcrafted and shipped within 3–5 business days. Larger bulk and event orders may take a little longer — we'll confirm timing with you directly." },
-        { "q": "Do you ship across the U.S.?", "a": "We do. We ship nationwide, with free shipping on orders over $35. You'll receive tracking as soon as your keepsakes are on their way." }
+        {
+          "q": "What kind of photos work best?",
+          "a": "Clear, well-lit photos with your subject close to the center work beautifully. Higher-resolution images give the sharpest results, but our preview tool lets you crop and zoom so every Gem looks its best before you order."
+        },
+        {
+          "q": "Can I use different photos in one pack?",
+          "a": "Absolutely. Every Gem in your set can be a different photo — mix family, pets, trips, and milestones in a single order. Upload as many photos as your story set allows."
+        },
+        {
+          "q": "Are these flexible magnets?",
+          "a": "No — and that's intentional. Each Gem is crafted on a firm, rigid base rather than a thin bendable sheet, so your photo stays perfectly flat, crisp, and protected for years. A strong magnetic backing holds it securely on refrigerators, lockers, and filing cabinets."
+        },
+        {
+          "q": "Can I crop my photos before checkout?",
+          "a": "You can. Our live preview lets you zoom, rotate, and frame each photo in your chosen Gem shape, so you'll know exactly how every keepsake will look before you pay."
+        },
+        {
+          "q": "Do you offer gift packaging?",
+          "a": "Every order arrives gift-ready with a thank-you card, care card, paper wrap, and gold seal. You can also add an optional gift note and premium box at checkout."
+        },
+        {
+          "q": "Do you make business or event orders?",
+          "a": "Yes — from QR menus and business cards to wedding favors and school fundraisers. Choose the 50-Gem Bulk Set or request a custom quote for larger runs."
+        },
+        {
+          "q": "How long does production take?",
+          "a": "Most orders are handcrafted and shipped within 3–5 business days. Larger bulk and event orders may take a little longer — we'll confirm timing with you directly."
+        },
+        {
+          "q": "Do you ship across the U.S.?",
+          "a": "We do. We ship nationwide, with free shipping on orders over $35. You'll receive tracking as soon as your keepsakes are on their way."
+        }
       ]
     },
     "ctaBand": {
@@ -135,5 +237,144 @@
       "cta": "Create Your Gems"
     },
     "stickyCta": "Create Your Gems"
+  },
+  "Customize": {
+    "eyebrow": "Start Your Order",
+    "title": "Customize Your Shells",
+    "stepChooseSize": "Choose Size",
+    "stepUploadPhotos": "Upload Photos",
+    "stepPlaceOrder": "Place Order",
+    "step1Title": "Choose Your Shell Size",
+    "piecesSuffix": "pieces",
+    "continue": "Continue →",
+    "back": "← Back",
+    "step2Title": "Photos",
+    "step2Desc": "You'll receive a secure upload link by email after placing your order request. You can upload photos for each Shell individually — any photo from your phone or camera works.",
+    "photoCardTitle": "Photos submitted after checkout",
+    "photoCardDesc": "A secure link is sent to your email. Upload {qty} photos — one per Shell.",
+    "photoCardNote": "We review every photo before printing. Minimum 1500×1500px recommended.",
+    "puzzleNoteLabel": "◆ Puzzle Shell Set:",
+    "puzzleNoteDesc": "Send just 1 photo. We'll split it automatically across the 9-piece grid. You'll approve the layout before we print.",
+    "step3Title": "Order Summary",
+    "summaryProduct": "Product",
+    "summaryPieces": "Pieces",
+    "summaryPrice": "Price",
+    "summaryShipping": "Shipping",
+    "summaryShippingValue": "Free (U.S.)",
+    "summaryProduction": "Production",
+    "summaryProductionValue": "7 business days",
+    "summaryPackaging": "Packaging",
+    "summaryPackagingValue": "Signature Gather Pouch",
+    "summaryNfc": "NFC + QR",
+    "summaryNfcValue": "Included on every piece",
+    "summaryShellsSuffix": "Shell magnets",
+    "paymentAcceptedLabel": "Payment accepted:",
+    "paymentAcceptedNote": "No payment now — we send a secure link to your email after confirming your order.",
+    "placeOrderRequest": "Place Order Request →",
+    "finalNote": "After placing your request, we'll email you a payment link within a few hours. Once paid, you'll receive a secure photo upload link.",
+    "sizes": [
+      {
+        "label": "Classic 2×2\"",
+        "desc": "Most popular"
+      },
+      {
+        "label": "Standard 2.5×2.5\"",
+        "desc": "Panoramic & groups"
+      },
+      {
+        "label": "Portrait 2×3\"",
+        "desc": "Weddings & memorials"
+      },
+      {
+        "label": "Story 2.5×3.5\"",
+        "desc": "Centerpiece size"
+      },
+      {
+        "label": "Grand 3×3\"",
+        "desc": "Maximum impact"
+      },
+      {
+        "label": "Puzzle Shell Set",
+        "desc": "1 photo split across 9"
+      }
+    ]
+  },
+  "Order": {
+    "eyebrow": "Order",
+    "title": "Place Your Order",
+    "sub": "Premium photo magnets · Free U.S. shipping · 7-day production",
+    "loading": "Loading…",
+    "stepOrderDetails": "Order Details",
+    "stepPayment": "Payment",
+    "yourOrder": "◆ Your Order",
+    "product": "Product",
+    "quantitySets": "Quantity (sets)",
+    "shippingNote": "Free U.S. shipping · 7-day production · NFC + QR included · Gift Pouch included",
+    "yourInformation": "◆ Your Information",
+    "fullNameLabel": "Full Name",
+    "emailLabel": "Email Address",
+    "phoneLabel": "Phone (optional)",
+    "shippingAddress": "◆ Shipping Address",
+    "addressLine1Label": "Address Line 1",
+    "addressLine2Label": "Address Line 2 (optional)",
+    "cityLabel": "City",
+    "stateLabel": "State",
+    "zipLabel": "ZIP",
+    "countryLabel": "Country",
+    "paymentPreference": "◆ Payment Preference",
+    "paymentPreferenceNote": "We'll send you a payment link via email:",
+    "paymentCreditDebit": "Credit / Debit",
+    "notesLabel": "Notes (optional)",
+    "notesPlaceholder": "Gift message, rush order, special instructions…",
+    "saving": "Saving…",
+    "continueToPayment": "Continue to Payment — ${total}.00 →",
+    "placeOrderRequestPrice": "Place Order Request — ${total}.00 →",
+    "footNoteWithGateway": "Your order is saved. Next step: secure payment, then upload your photos.",
+    "footNoteNoGateway": "No payment now. Next step: upload your photos — we'll email you a payment link within a few hours.",
+    "productionNote": "Production: 7 business days after photos are received.",
+    "orderNumberPrefix": "Order #{orderNumber}",
+    "total": "Total",
+    "cardTab": "💳 Card",
+    "paypalTab": "🅿 PayPal",
+    "loadingPaymentForm": "Loading payment form…",
+    "loadingPaypal": "Loading PayPal…",
+    "goBack": "← Go back",
+    "piecesNeeded": "{qty} piece(s) needed",
+    "uploadYourPhotos": "Upload your photos",
+    "uploadDesc": "Upload the photos you want made into magnets. We recommend {qty} photo(s) for this order, but you can add more or finish with what you have.",
+    "photosUploadedCount": "{count} photo(s) uploaded",
+    "finishingOrder": "Finishing order…",
+    "finishOrderCta": "Finish Order →",
+    "paymentConfirmed": "Payment Confirmed!",
+    "orderRequestReceived": "Order Request Received!",
+    "successBody": "Your photos were received and your order is in our production queue. You'll get an email confirmation shortly, and tracking once it ships.",
+    "browseMoreProducts": "Browse More Products",
+    "errorUploadAtLeastOne": "Please upload at least one photo before finishing your order.",
+    "errorMissingAddress": "Shipping address is missing — please go back and complete it.",
+    "errorGeneric": "Something went wrong. Please email contact@memoirgems.com directly.",
+    "errorSavingPhotos": "Something went wrong saving your photos.",
+    "products": [
+      {
+        "name": "Classic Shell 2×2\""
+      },
+      {
+        "name": "Standard Shell 2.5×2.5\""
+      },
+      {
+        "name": "Portrait Shell 2×3\""
+      },
+      {
+        "name": "Story Shell 2.5×3.5\""
+      },
+      {
+        "name": "Grand Shell 3×3\""
+      },
+      {
+        "name": "Wedding Story Pack"
+      },
+      {
+        "name": "Puzzle Shell Set"
+      }
+    ]
   }
 }
