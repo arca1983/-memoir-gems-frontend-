@@ -3,9 +3,9 @@ import { headers } from "next/headers";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Memoir Gems — Custom Photo Magnets with NFC & QR Technology",
+  title: "Memoir Gems — Custom Photo Magnets, Made with Love",
   description:
-    "Transform your precious memories into luxurious custom photo magnets embedded with NFC and QR technology. Ships in 7 days. Made with love.",
+    "Transform your precious memories into luxurious custom photo magnets, handcrafted from your favorite photos. Ships in 7 days. Made with love.",
   metadataBase: new URL("https://memoirgems.com"),
 };
 
