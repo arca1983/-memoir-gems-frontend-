@@ -11,18 +11,18 @@ const PRODUCTS: Record<string, {
   "shell-2x2": {
     id: "shell-2x2", name: "Classic Shell — 2×2\"", size: "2×2", tag: "Best Seller",
     desc: "Best-selling square. 9 photos per set.",
-    longDesc: "Our most popular size. Nine 2×2 Shell magnets, each printed with precision UV ink for vivid, fade-resistant color. Every Shell includes an embedded NFC chip and dynamic QR code you can link to a photo album, video, or any URL.",
+    longDesc: "Our most popular size. Nine 2×2 Shell magnets, each printed with precision UV ink for vivid, fade-resistant color. Each Shell is built to last — vivid, fade-resistant color that stays sharp for years.",
     price: 48, qty: 9,
     img: "https://images.unsplash.com/photo-1529636562405-8bb4b3e9b01f?w=800&q=85",
-    features: ["9 Shell magnets per set", "2×2 inch rigid Shell", "NFC chip + dynamic QR on every piece", "Signature Gather Pouch included", "Free U.S. shipping"],
+    features: ["9 Shell magnets per set", "2×2 inch rigid Shell", "Signature Gather Pouch included", "Free U.S. shipping"],
   },
   "shell-2-5x2-5": {
     id: "shell-2-5x2-5", name: "Standard Shell — 2.5×2.5\"", size: "2.5×2.5", tag: "Popular",
     desc: "Panoramic & group shots. 9 photos per set.",
-    longDesc: "More canvas for your most important moments. The 2.5×2.5 Shell is perfect for panoramic photos and group shots. Nine per set, each linked to its own digital destination.",
+    longDesc: "More canvas for your most important moments. The 2.5×2.5 Shell is perfect for panoramic photos and group shots. Nine per set, each crafted with the same archival-quality printing.",
     price: 58, qty: 9,
     img: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=85",
-    features: ["9 Shell magnets per set", "2.5×2.5 inch rigid Shell", "NFC chip + dynamic QR on every piece", "Signature Gather Pouch included", "Free U.S. shipping"],
+    features: ["9 Shell magnets per set", "2.5×2.5 inch rigid Shell", "Signature Gather Pouch included", "Free U.S. shipping"],
   },
   "shell-2x3": {
     id: "shell-2x3", name: "Portrait Shell — 2×3\"", size: "2×3", tag: "New",
@@ -30,7 +30,7 @@ const PRODUCTS: Record<string, {
     longDesc: "The portrait orientation makes it ideal for wedding photos, individual portraits, and memorial collections. Six 2×3 Shells per set, delivered gift-ready.",
     price: 52, qty: 6,
     img: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=800&q=85",
-    features: ["6 Shell magnets per set", "2×3 inch portrait Shell", "NFC chip + dynamic QR on every piece", "Signature Gather Pouch included", "Free U.S. shipping"],
+    features: ["6 Shell magnets per set", "2×3 inch portrait Shell", "Signature Gather Pouch included", "Free U.S. shipping"],
   },
   "shell-2-5x3-5": {
     id: "shell-2-5x3-5", name: "Story Shell — 2.5×3.5\"", size: "2.5×3.5", tag: "Gift Favorite",
@@ -38,7 +38,7 @@ const PRODUCTS: Record<string, {
     longDesc: "Our centerpiece Shell. Larger format for statement pieces — perfect for memorial collections, anniversary gifts, and special event favors. Six per set.",
     price: 64, qty: 6,
     img: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=85",
-    features: ["6 Shell magnets per set", "2.5×3.5 inch portrait Shell", "NFC chip + dynamic QR on every piece", "Signature Gather Pouch included", "Free U.S. shipping"],
+    features: ["6 Shell magnets per set", "2.5×3.5 inch portrait Shell", "Signature Gather Pouch included", "Free U.S. shipping"],
   },
   "shell-3x3": {
     id: "shell-3x3", name: "Grand Shell — 3×3\"", size: "3×3", tag: "Premium",
@@ -46,7 +46,7 @@ const PRODUCTS: Record<string, {
     longDesc: "The Grand Shell is our largest format — a true statement piece. Four magnets per set, each commanding attention on any surface. Premium presentation.",
     price: 74, qty: 4,
     img: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=800&q=85",
-    features: ["4 Shell magnets per set", "3×3 inch grand Shell", "NFC chip + dynamic QR on every piece", "Signature Gather Pouch included", "Free U.S. shipping"],
+    features: ["4 Shell magnets per set", "3×3 inch grand Shell", "Signature Gather Pouch included", "Free U.S. shipping"],
   },
   "wedding-pack": {
     id: "wedding-pack", name: "Wedding Story Pack", size: "2.5×2.5", tag: "Collection",
@@ -54,19 +54,18 @@ const PRODUCTS: Record<string, {
     longDesc: "Our most beloved wedding gift. Nine 2.5×2.5 Shells, each linked to a different moment from the day — the ceremony, first dance, reception, toasts. Delivered in a premium Gather Pouch with tissue and bronze satin ribbon.",
     price: 89, qty: 9,
     img: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&q=85",
-    features: ["9 Shell magnets per set", "2.5×2.5 inch Shell", "NFC chip + dynamic QR on every piece", "Signature Gather Pouch + bronze ribbon", "Free U.S. shipping"],
+    features: ["9 Shell magnets per set", "2.5×2.5 inch Shell", "Signature Gather Pouch + bronze ribbon", "Free U.S. shipping"],
   },
   "puzzle-shells": {
     id: "puzzle-shells", name: "Puzzle Shell Set", size: "2×2", tag: "Exclusive",
     desc: "One photo split across 9 interlocking Shell magnets. Assemble on your fridge.",
-    longDesc: "A single photo printed across nine 2×2 Shell magnets in a 3×3 grid — when you place them side by side on your fridge, they form one stunning image. Each piece is a rigid UV-printed Shell with its own NFC chip, so your guests can tap any piece to see the full story behind the photo.",
+    longDesc: "A single photo printed across nine 2×2 Shell magnets in a 3×3 grid — when you place them side by side on your fridge, they form one stunning image. Each piece is a rigid, UV-printed Shell built to hold its color and shape for years.",
     price: 79, qty: 9,
     img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85",
     isPuzzle: true,
     features: [
       "9 Shell magnets — one image split across all 9",
       "Assembles into a 6×6\" mosaic on any surface",
-      "Each piece has its own NFC chip + dynamic QR",
       "Send one photo — we do the split automatically",
       "Signature Gather Pouch included",
       "Free U.S. shipping",
@@ -280,7 +279,7 @@ export default function ProductDetailPage({ params }: Props) {
               flexWrap: "wrap",
             }}
           >
-            {["Free U.S. Shipping", "7-Day Production", "Gift-Ready Packaging", "NFC + QR Included"].map((b) => (
+            {["Free U.S. Shipping", "7-Day Production", "Gift-Ready Packaging", "Premium UV Print"].map((b) => (
               <div
                 key={b}
                 style={{
