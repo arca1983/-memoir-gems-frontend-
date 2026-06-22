@@ -381,8 +381,8 @@
     "titleLine2": "recuerdos vivos",
     "heroSub": "Memoir Gems nació de una creencia simple: tus fotos más importantes merecen vivir en un lugar mejor que la pantalla de un teléfono.",
     "whyEyebrow": "Por qué empezamos",
-    "whyTitle": "Un recuerdo que puedes sostener — y tocar",
-    "p1": "Comenzamos Memoir Gems en Texas con una pregunta que no dejábamos de hacernos: ¿y si un imán de fotos pudiera hacer algo más que colgar en el refrigerador? ¿Y si pudiera abrir todo un mundo de recuerdos con un solo toque?",
+    "whyTitle": "Un Recuerdo que Puedes Sostener — y Conservar",
+    "p1": "Comenzamos Memoir Gems en Texas con una pregunta que no dejábamos de hacernos: ¿y si un imán de fotos pudiera hacer algo más que colgar en el refrigerador? ¿Y si pudiera convertirse en un pequeño tesoro al que regresas una y otra vez?",
     "p2": "El Shell fue nuestra respuesta. Un imán de fotos rígido, impreso en UV, que mantiene su color y forma por años — hecho para verse, tocarse y exhibirse todos los días.",
     "p3": "Cada Shell se envía listo para regalar en nuestra Bolsa Gather de la firma — papel de seda, cinta satinada en bronce, y un recuerdo que de verdad hace más que cualquier imán anterior.",
     "p4": "Estamos en Texas y enviamos a todo Estados Unidos. Cada set se hace un pedido a la vez, con tus fotos, tus momentos, tu historia.",
@@ -526,37 +526,37 @@
       {
         "icon": "💍",
         "title": "Bodas",
-        "desc": "Imanes Shell como detalles para invitados, porta tarjetas de asiento, o un regalo especial para los novios. Cada Shell enlaza a tu galería de boda para que los invitados revivan el día.",
+        "desc": "Imanes Shell como detalles para invitados, porta tarjetas de asiento, o un regalo especial para los novios. Cada Shell se imprime con una foto favorita del gran día, lista para conservar para siempre.",
         "popular": "Paquete de Boda — $89"
       },
       {
         "icon": "👶",
         "title": "Baby Showers y nacimientos",
-        "desc": "Anuncia la llegada con un set de imanes Shell. Familia y amigos reciben un recuerdo — toca para ver el primer álbum del recién nacido.",
+        "desc": "Anuncia la llegada con un set de imanes Shell. Familia y amigos reciben un recuerdo con las primeras fotos del recién nacido.",
         "popular": "Set Clásico 2×2 — $48"
       },
       {
         "icon": "🎓",
         "title": "Graduaciones",
-        "desc": "Celebra el logro. Imanes Shell con fotos de graduación, cada uno enlazado a un libro de recuerdos digital o video homenaje.",
+        "desc": "Celebra el logro. Imanes Shell con fotos de graduación — un recuerdo duradero del logro alcanzado.",
         "popular": "Set Retrato 2×3 — $52"
       },
       {
         "icon": "🎂",
         "title": "Cumpleaños especiales",
-        "desc": "El regalo perfecto para los 40, 50, 60 años. Un set curado de fotos enlazado a un mensaje de video de amigos y familia.",
+        "desc": "El regalo perfecto para los 40, 50, 60 años. Un set curado de fotos convertidas en imanes Shell para atesorar.",
         "popular": "Set Historia 2.5×3.5 — $64"
       },
       {
         "icon": "🕊️",
         "title": "Memoriales y homenajes",
-        "desc": "Honra una vida bien vivida. Sets conmemorativos con fotos retrato, cada uno enlazando a una página de homenaje digital que la familia puede ver para siempre.",
+        "desc": "Honra una vida bien vivida. Sets conmemorativos con fotos retrato — un homenaje que la familia puede conservar para siempre.",
         "popular": "Set Grande 3×3 — $74"
       },
       {
         "icon": "🥂",
         "title": "Eventos corporativos",
-        "desc": "Imanes Shell de marca para eventos de equipo, regalos a clientes y lanzamientos de producto. Enlaza a tu página de marca, campaña o galería del equipo.",
+        "desc": "Imanes Shell de marca para eventos de equipo, regalos a clientes y lanzamientos de producto — impresos con la fotografía de tu marca.",
         "popular": "Programas B2B disponibles"
       }
     ],
@@ -626,17 +626,17 @@
       {
         "icon": "🍽️",
         "title": "Imanes para restaurantes y cafés",
-        "desc": "Reemplaza los menús estáticos con imanes Shell. Toca para ver los especiales del día, el menú completo o el enlace de reservas. Actualiza la URL al instante — sin reimprimir."
+        "desc": "Reemplaza los menús estáticos con imanes Shell de marca con tu logo y platillos destacados — un recuerdo que los clientes se llevan a casa y conservan en su refrigerador."
       },
       {
         "icon": "🏠",
         "title": "Regalos de cierre inmobiliario",
-        "desc": "Regala a tus clientes un set de imanes Shell con su nuevo hogar. Cada Shell enlaza a un recorrido en video o un mensaje de bienvenida personalizado."
+        "desc": "Regala a tus clientes un set de imanes Shell con su nuevo hogar — un recuerdo duradero de ese momento."
       },
       {
         "icon": "🏨",
         "title": "Hoteles y hospitalidad",
-        "desc": "Imanes Shell personalizados en habitaciones y suites que enlazan a servicios del hotel, guías locales o páginas de concierge. Un toque de marca premium."
+        "desc": "Imanes Shell de marca personalizados en habitaciones y suites — un toque premium y memorable que los huéspedes se llevan a casa."
       },
       {
         "icon": "💍",
@@ -651,7 +651,7 @@
       {
         "icon": "🏢",
         "title": "Empresas y equipos",
-        "desc": "Reconocimiento de empleados, regalos a clientes, lanzamientos de producto, ferias comerciales. Sets Shell personalizados con tu fotografía de marca y enlaces."
+        "desc": "Reconocimiento de empleados, regalos a clientes, lanzamientos de producto, ferias comerciales. Sets Shell personalizados con tu fotografía de marca."
       }
     ],
     "volumePricing": "Precios por volumen",
@@ -834,5 +834,151 @@
         "body": "Memoir Gems LLC\ncontact@memoirgems.com\nmemoirgems.com"
       }
     ]
+  },
+  "Products": {
+    "eyebrow": "Nuestra Colección",
+    "title": "Productos Shell de Memoir Gems",
+    "subtitle": "Cinco tamaños Shell más sets de rompecabezas exclusivos. Se envían listos para regalar en 7 días.",
+    "piecesSuffix": "piezas",
+    "viewLabel": "Ver",
+    "items": [
+      {
+        "id": "shell-2x2",
+        "name": "Shell Clásico — 2×2\"",
+        "desc": "El cuadrado más vendido. 9 fotos por set. Para racimos y sets de escritorio.",
+        "tag": "Más vendido"
+      },
+      {
+        "id": "shell-2.5x2.5",
+        "name": "Shell Estándar — 2.5×2.5\"",
+        "desc": "Panorámicas y grupos. 9 fotos por set. Más espacio para tus fotos favoritas.",
+        "tag": "Popular"
+      },
+      {
+        "id": "shell-2x3",
+        "name": "Shell Retrato — 2×3\"",
+        "desc": "Bodas y memoriales. 6 fotos por set. Orientación vertical.",
+        "tag": "Nuevo"
+      },
+      {
+        "id": "shell-2.5x3.5",
+        "name": "Shell Historia — 2.5×3.5\"",
+        "desc": "Tamaño protagonista. 6 fotos por set. Perfecto para memoriales.",
+        "tag": "Favorito para regalar"
+      },
+      {
+        "id": "shell-3x3",
+        "name": "Shell Grande — 3×3\"",
+        "desc": "Pieza de impacto. 4 fotos por set. Máximo impacto.",
+        "tag": "Premium"
+      },
+      {
+        "id": "wedding-pack",
+        "name": "Paquete Historia de Boda",
+        "desc": "Nueve Shells de 2.5×2.5 que capturan la ceremonia, el primer baile y cada brindis.",
+        "tag": "Colección"
+      },
+      {
+        "id": "puzzle-shells",
+        "name": "Set Shell Rompecabezas",
+        "desc": "Una foto dividida en 9 imanes Shell que se interconectan. Ármalos en tu refrigerador para ver la imagen completa.",
+        "tag": "Exclusivo"
+      }
+    ]
+  },
+  "ProductDetail": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbProducts": "Productos",
+    "puzzleEyebrowLabel": "Set Rompecabezas — 9 piezas, 1 foto",
+    "shellEyebrow": "Shell {size}\" · {qty} fotos por set",
+    "puzzleCaption": "9 piezas · una imagen · se arma en un mosaico de 6×6″",
+    "orderNow": "Ordenar Ahora",
+    "askQuestion": "Hacer una Pregunta",
+    "trustBadges": [
+      "Envío Gratis en EE. UU.",
+      "Producción en 7 días",
+      "Empaque Listo para Regalar",
+      "Impresión UV Premium"
+    ],
+    "products": {
+      "shell-2x2": {
+        "name": "Shell Clásico — 2×2\"",
+        "tag": "Más vendido",
+        "longDesc": "Nuestro tamaño más popular. Nueve imanes Shell de 2×2, cada uno impreso con tinta UV de precisión para colores vivos y resistentes a la decoloración. Cada Shell está hecho para durar — color vivo y resistente que se mantiene nítido por años.",
+        "features": [
+          "9 imanes Shell por set",
+          "Shell rígido de 2×2 pulgadas",
+          "Incluye Bolsa Gather de la firma",
+          "Envío gratis en EE. UU."
+        ]
+      },
+      "shell-2.5x2.5": {
+        "name": "Shell Estándar — 2.5×2.5\"",
+        "tag": "Popular",
+        "longDesc": "Más espacio para tus momentos más importantes. El Shell de 2.5×2.5 es perfecto para fotos panorámicas y de grupo. Nueve por set, cada uno hecho con la misma impresión de calidad archivística.",
+        "features": [
+          "9 imanes Shell por set",
+          "Shell rígido de 2.5×2.5 pulgadas",
+          "Incluye Bolsa Gather de la firma",
+          "Envío gratis en EE. UU."
+        ]
+      },
+      "shell-2x3": {
+        "name": "Shell Retrato — 2×3\"",
+        "tag": "Nuevo",
+        "longDesc": "La orientación vertical lo hace ideal para fotos de boda, retratos individuales y colecciones memoriales. Seis Shells de 2×3 por set, entregados listos para regalar.",
+        "features": [
+          "6 imanes Shell por set",
+          "Shell retrato de 2×3 pulgadas",
+          "Incluye Bolsa Gather de la firma",
+          "Envío gratis en EE. UU."
+        ]
+      },
+      "shell-2.5x3.5": {
+        "name": "Shell Historia — 2.5×3.5\"",
+        "tag": "Favorito para regalar",
+        "longDesc": "Nuestro Shell protagonista. Formato más grande para piezas de impacto — perfecto para colecciones memoriales, regalos de aniversario y recuerdos de eventos especiales. Seis por set.",
+        "features": [
+          "6 imanes Shell por set",
+          "Shell retrato de 2.5×3.5 pulgadas",
+          "Incluye Bolsa Gather de la firma",
+          "Envío gratis en EE. UU."
+        ]
+      },
+      "shell-3x3": {
+        "name": "Shell Grande — 3×3\"",
+        "tag": "Premium",
+        "longDesc": "El Shell Grande es nuestro formato más grande — una verdadera pieza de impacto. Cuatro imanes por set, cada uno llamando la atención en cualquier superficie. Presentación premium.",
+        "features": [
+          "4 imanes Shell por set",
+          "Shell grande de 3×3 pulgadas",
+          "Incluye Bolsa Gather de la firma",
+          "Envío gratis en EE. UU."
+        ]
+      },
+      "wedding-pack": {
+        "name": "Paquete Historia de Boda",
+        "tag": "Colección",
+        "longDesc": "Nuestro regalo de boda más querido. Nueve Shells de 2.5×2.5 con tus momentos favoritos del día — la ceremonia, el primer baile, la recepción, los brindis. Entregado en una Bolsa Gather premium con papel de seda y cinta satinada en bronce.",
+        "features": [
+          "9 imanes Shell por set",
+          "Shell de 2.5×2.5 pulgadas",
+          "Bolsa Gather de la firma + cinta bronce",
+          "Envío gratis en EE. UU."
+        ]
+      },
+      "puzzle-shells": {
+        "name": "Set Shell Rompecabezas",
+        "tag": "Exclusivo",
+        "longDesc": "Una sola foto impresa en nueve imanes Shell de 2×2 en una cuadrícula de 3×3 — cuando los colocas juntos en tu refrigerador, forman una imagen impresionante. Cada pieza es un Shell rígido, impreso en UV, hecho para mantener su color y forma por años.",
+        "features": [
+          "9 imanes Shell — una imagen dividida en las 9 piezas",
+          "Se arma en un mosaico de 6×6\" en cualquier superficie",
+          "Envía una foto — nosotros hacemos la división automáticamente",
+          "Incluye Bolsa Gather de la firma",
+          "Envío gratis en EE. UU."
+        ]
+      }
+    }
   }
 }

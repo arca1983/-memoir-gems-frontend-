@@ -381,8 +381,8 @@
     "titleLine2": "Living Keepsakes",
     "heroSub": "Memoir Gems was born from a simple belief: your most important photos deserve to live somewhere better than a phone screen.",
     "whyEyebrow": "Why We Started",
-    "whyTitle": "A Memory You Can Hold — and Tap",
-    "p1": "We started Memoir Gems in Texas with a question we couldn't stop asking: what if a photo magnet could do more than just hang on a fridge? What if it could open a whole world of memory with a single tap?",
+    "whyTitle": "A Memory You Can Hold — and Keep",
+    "p1": "We started Memoir Gems in Texas with a question we couldn't stop asking: what if a photo magnet could do more than just hang on a fridge? What if it could become a small treasure you reach for again and again?",
     "p2": "The Shell was our answer. A rigid, UV-printed photo magnet that holds its color and shape for years — built to be seen, touched, and kept on display every day.",
     "p3": "Every Shell ships gift-ready in our signature Gather Pouch — tissue paper, bronze satin ribbon, and a keepsake that truly does more than any magnet before it.",
     "p4": "We're based in Texas and ship across the U.S. Every set is made one order at a time, with your photos, your moments, your story.",
@@ -526,37 +526,37 @@
       {
         "icon": "💍",
         "title": "Weddings",
-        "desc": "Shell magnets as guest favors, escort card holders, or a signature gift for the couple. Each Shell links to your wedding gallery so guests can relive the day.",
+        "desc": "Shell magnets as guest favors, escort card holders, or a signature gift for the couple. Each Shell is printed with a favorite photo from the big day, ready to keep forever.",
         "popular": "Wedding Story Pack — $89"
       },
       {
         "icon": "👶",
         "title": "Baby Showers & Births",
-        "desc": "Announce the arrival with a set of Shell magnets. Family and friends get a keepsake — tap to see the newborn's first album.",
+        "desc": "Announce the arrival with a set of Shell magnets. Family and friends get a keepsake featuring the newborn's first photos.",
         "popular": "Classic 2×2 Set — $48"
       },
       {
         "icon": "🎓",
         "title": "Graduations",
-        "desc": "Celebrate the milestone. Shell magnets featuring graduation portraits, each linked to a digital memory book or video tribute.",
+        "desc": "Celebrate the milestone. Shell magnets featuring graduation portraits — a lasting memory of the achievement.",
         "popular": "Portrait 2×3 Set — $52"
       },
       {
         "icon": "🎂",
         "title": "Milestone Birthdays",
-        "desc": "The perfect gift for 40th, 50th, 60th birthdays. A curated set of memory photos linked to a video message from friends and family.",
+        "desc": "The perfect gift for 40th, 50th, 60th birthdays. A curated set of memory photos turned into Shell magnets to treasure.",
         "popular": "Story 2.5×3.5 Set — $64"
       },
       {
         "icon": "🕊️",
         "title": "Memorials & Tributes",
-        "desc": "Honor a life well lived. Memorial Shell sets with portrait photos, each linking to a digital tribute page family can access forever.",
+        "desc": "Honor a life well lived. Memorial Shell sets with portrait photos — a tribute the family can hold onto forever.",
         "popular": "Grand 3×3 Set — $74"
       },
       {
         "icon": "🥂",
         "title": "Corporate Events",
-        "desc": "Branded Shell magnets for team events, client gifts, and product launches. Link to your brand page, campaign, or team gallery.",
+        "desc": "Branded Shell magnets for team events, client gifts, and product launches — printed with your brand photography.",
         "popular": "B2B Programs available"
       }
     ],
@@ -626,17 +626,17 @@
       {
         "icon": "🍽️",
         "title": "Restaurant & Café Magnets",
-        "desc": "Replace static menu cards with Shell magnets. Tap to see today's specials, full menu, or reservation link. Update the URL instantly — no reprinting."
+        "desc": "Replace static menu cards with branded Shell magnets featuring your logo and signature dishes — a keepsake guests take home and keep on their fridge."
       },
       {
         "icon": "🏠",
         "title": "Real Estate Closing Gifts",
-        "desc": "Give clients a Shell magnet set featuring their new home. Each Shell links to a video walkthrough or a personalized welcome message."
+        "desc": "Give clients a Shell magnet set featuring their new home — a lasting keepsake of the milestone."
       },
       {
         "icon": "🏨",
         "title": "Hotel & Hospitality",
-        "desc": "Custom Shell magnets in rooms and suites that link to hotel services, local guides, or concierge pages. A premium branded touch."
+        "desc": "Custom branded Shell magnets in rooms and suites — a premium, memorable touch guests take home."
       },
       {
         "icon": "💍",
@@ -651,7 +651,7 @@
       {
         "icon": "🏢",
         "title": "Corporate & Team",
-        "desc": "Employee recognition, client gifts, product launches, trade shows. Custom Shell sets with your brand photography and links."
+        "desc": "Employee recognition, client gifts, product launches, trade shows. Custom Shell sets with your brand photography."
       }
     ],
     "volumePricing": "Volume Pricing",
@@ -834,5 +834,151 @@
         "body": "Memoir Gems LLC\ncontact@memoirgems.com\nmemoirgems.com"
       }
     ]
+  },
+  "Products": {
+    "eyebrow": "Our Collection",
+    "title": "Memoir Gems Shell Products",
+    "subtitle": "Five Shell sizes plus exclusive puzzle sets. Ships gift-ready in 7 days.",
+    "piecesSuffix": "pieces",
+    "viewLabel": "View",
+    "items": [
+      {
+        "id": "shell-2x2",
+        "name": "Classic Shell — 2×2\"",
+        "desc": "Best-selling square. 9 photos per set. Clusters & desk sets.",
+        "tag": "Best Seller"
+      },
+      {
+        "id": "shell-2.5x2.5",
+        "name": "Standard Shell — 2.5×2.5\"",
+        "desc": "Panoramic & groups. 9 photos per set. A bigger canvas for your favorite shots.",
+        "tag": "Popular"
+      },
+      {
+        "id": "shell-2x3",
+        "name": "Portrait Shell — 2×3\"",
+        "desc": "Weddings & memorials. 6 photos per set. Portrait orientation.",
+        "tag": "New"
+      },
+      {
+        "id": "shell-2.5x3.5",
+        "name": "Story Shell — 2.5×3.5\"",
+        "desc": "Centerpiece size. 6 photos per set. Perfect for memorials.",
+        "tag": "Gift Favorite"
+      },
+      {
+        "id": "shell-3x3",
+        "name": "Grand Shell — 3×3\"",
+        "desc": "Statement piece. 4 photos per set. Maximum impact.",
+        "tag": "Premium"
+      },
+      {
+        "id": "wedding-pack",
+        "name": "Wedding Story Pack",
+        "desc": "Nine 2.5×2.5 Shells capturing the ceremony, first dance, and every toast.",
+        "tag": "Collection"
+      },
+      {
+        "id": "puzzle-shells",
+        "name": "Puzzle Shell Set",
+        "desc": "One photo split across 9 interlocking Shell magnets. Assemble on your fridge for the full picture.",
+        "tag": "Exclusive"
+      }
+    ]
+  },
+  "ProductDetail": {
+    "breadcrumbHome": "Home",
+    "breadcrumbProducts": "Products",
+    "puzzleEyebrowLabel": "Puzzle Set — 9 pieces, 1 photo",
+    "shellEyebrow": "{size}\" Shell · {qty} photos per set",
+    "puzzleCaption": "9 pieces · one image · assembles into a 6×6″ mosaic",
+    "orderNow": "Order Now",
+    "askQuestion": "Ask a Question",
+    "trustBadges": [
+      "Free U.S. Shipping",
+      "7-Day Production",
+      "Gift-Ready Packaging",
+      "Premium UV Print"
+    ],
+    "products": {
+      "shell-2x2": {
+        "name": "Classic Shell — 2×2\"",
+        "tag": "Best Seller",
+        "longDesc": "Our most popular size. Nine 2×2 Shell magnets, each printed with precision UV ink for vivid, fade-resistant color. Each Shell is built to last — vivid, fade-resistant color that stays sharp for years.",
+        "features": [
+          "9 Shell magnets per set",
+          "2×2 inch rigid Shell",
+          "Signature Gather Pouch included",
+          "Free U.S. shipping"
+        ]
+      },
+      "shell-2.5x2.5": {
+        "name": "Standard Shell — 2.5×2.5\"",
+        "tag": "Popular",
+        "longDesc": "More canvas for your most important moments. The 2.5×2.5 Shell is perfect for panoramic photos and group shots. Nine per set, each crafted with the same archival-quality printing.",
+        "features": [
+          "9 Shell magnets per set",
+          "2.5×2.5 inch rigid Shell",
+          "Signature Gather Pouch included",
+          "Free U.S. shipping"
+        ]
+      },
+      "shell-2x3": {
+        "name": "Portrait Shell — 2×3\"",
+        "tag": "New",
+        "longDesc": "The portrait orientation makes it ideal for wedding photos, individual portraits, and memorial collections. Six 2×3 Shells per set, delivered gift-ready.",
+        "features": [
+          "6 Shell magnets per set",
+          "2×3 inch portrait Shell",
+          "Signature Gather Pouch included",
+          "Free U.S. shipping"
+        ]
+      },
+      "shell-2.5x3.5": {
+        "name": "Story Shell — 2.5×3.5\"",
+        "tag": "Gift Favorite",
+        "longDesc": "Our centerpiece Shell. Larger format for statement pieces — perfect for memorial collections, anniversary gifts, and special event favors. Six per set.",
+        "features": [
+          "6 Shell magnets per set",
+          "2.5×3.5 inch portrait Shell",
+          "Signature Gather Pouch included",
+          "Free U.S. shipping"
+        ]
+      },
+      "shell-3x3": {
+        "name": "Grand Shell — 3×3\"",
+        "tag": "Premium",
+        "longDesc": "The Grand Shell is our largest format — a true statement piece. Four magnets per set, each commanding attention on any surface. Premium presentation.",
+        "features": [
+          "4 Shell magnets per set",
+          "3×3 inch grand Shell",
+          "Signature Gather Pouch included",
+          "Free U.S. shipping"
+        ]
+      },
+      "wedding-pack": {
+        "name": "Wedding Story Pack",
+        "tag": "Collection",
+        "longDesc": "Our most beloved wedding gift. Nine 2.5×2.5 Shells featuring your favorite moments from the day — the ceremony, first dance, reception, toasts. Delivered in a premium Gather Pouch with tissue and bronze satin ribbon.",
+        "features": [
+          "9 Shell magnets per set",
+          "2.5×2.5 inch Shell",
+          "Signature Gather Pouch + bronze ribbon",
+          "Free U.S. shipping"
+        ]
+      },
+      "puzzle-shells": {
+        "name": "Puzzle Shell Set",
+        "tag": "Exclusive",
+        "longDesc": "A single photo printed across nine 2×2 Shell magnets in a 3×3 grid — when you place them side by side on your fridge, they form one stunning image. Each piece is a rigid, UV-printed Shell built to hold its color and shape for years.",
+        "features": [
+          "9 Shell magnets — one image split across all 9",
+          "Assembles into a 6×6\" mosaic on any surface",
+          "Send one photo — we do the split automatically",
+          "Signature Gather Pouch included",
+          "Free U.S. shipping"
+        ]
+      }
+    }
   }
 }
